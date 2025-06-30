@@ -1,3 +1,9 @@
+"""
+Animate and visualize passes from StatsBomb event data.
+
+This script loads event data, extracts passes, and animates them on a football pitch.
+"""
+
 import json
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, FFMpegWriter
@@ -8,7 +14,15 @@ import os
 
 
 def load_events(filepath):
-    """Load and parse StatsBomb event JSON."""
+    """
+    Load and parse StatsBomb event JSON for passes.
+
+    :param filepath: Path to the StatsBomb events JSON file
+    :type filepath: str
+    :return: List of pass event dictionaries sorted by time
+    :rtype: list[dict]
+    :raises ValueError: If no valid passes are found in the file
+    """
     with open(filepath) as f:
         events = json.load(f)
     passes = [
@@ -28,36 +42,40 @@ def load_events(filepath):
 
 
 def parse_time(timestamp):
-    """Convert StatsBomb timestamp string to datetime."""
+    """
+    Convert StatsBomb timestamp string to datetime.
+
+    :param timestamp: Timestamp string in the format "%H:%M:%S.%f"
+    :type timestamp: str
+    :return: Corresponding datetime object
+    :rtype: datetime
+    """
     return datetime.strptime(timestamp, "%H:%M:%S.%f")
 
 
 def draw_pitch(ax, pitch_color="#00E700"):
-    """Draw a full football pitch on given Axes."""
-    ax.set_facecolor(pitch_color)
+    """
+    Draw a full football pitch on given Axes.
 
-    # Pitch outline & halves
+    :param ax: Matplotlib Axes object to draw the pitch on
+    :type ax: matplotlib.axes.Axes
+    :param pitch_color: Background color of the pitch
+    :type pitch_color: str
+    """
+    ax.set_facecolor(pitch_color)
     ax.plot([0, 0, 120, 120, 0], [0, 80, 80, 0, 0], color="black")
     ax.plot([60, 60], [0, 80], color="black", linestyle="--")
-
-    # Center circle & spot
     center_circle = Circle((60, 40), 9.15, color='black', fill=False)
     ax.add_patch(center_circle)
     ax.plot(60, 40, 'ko')
-
-    # Penalty areas
     ax.plot([18, 18], [21.1, 58.9], color="black")
     ax.plot([0, 18], [21.1, 21.1], color="black")
     ax.plot([0, 18], [58.9, 58.9], color="black")
-
     ax.plot([102, 120], [21.1, 21.1], color="black")
     ax.plot([102, 102], [21.1, 58.9], color="black")
     ax.plot([102, 120], [58.9, 58.9], color="black")
-
-    # Goals
     ax.plot([0, 0], [36, 44], color="red", linewidth=2)
     ax.plot([120, 120], [36, 44], color="red", linewidth=2)
-
     ax.set_xlim(0, 120)
     ax.set_ylim(0, 80)
     ax.set_xticks([])
@@ -66,7 +84,19 @@ def draw_pitch(ax, pitch_color="#00E700"):
 
 
 def animate_passes(passes, speed=1.0, interval_ms=100, save=False):
-    """Create an animation of passes and optionally save as video."""
+    """
+    Create an animation of passes and optionally save as video.
+
+    :param passes: List of pass event dictionaries
+    :type passes: list[dict]
+    :param speed: Playback speed multiplier
+    :type speed: float
+    :param interval_ms: Interval between animation frames in milliseconds
+    :type interval_ms: int
+    :param save: Whether to save the animation as a video file
+    :type save: bool
+    :raises ValueError: If no passes are provided
+    """
     fig, ax = plt.subplots(figsize=(12, 8))
     ax.set_title("Pass Animation")
     draw_pitch(ax)
@@ -76,6 +106,12 @@ def animate_passes(passes, speed=1.0, interval_ms=100, save=False):
     arrows = []
 
     def update(frame):
+        """
+        Update function for each animation frame.
+
+        :param frame: Current frame number
+        :type frame: int
+        """
         current_time = (frame / 10.0) * speed
         while passes_queue and passes_queue[0]["time_sec"] <= current_time:
             p = passes_queue.pop(0)
@@ -109,6 +145,11 @@ def animate_passes(passes, speed=1.0, interval_ms=100, save=False):
 
 
 def main():
+    """
+    Main function to parse arguments and run the animation.
+
+    :return: None
+    """
     parser = argparse.ArgumentParser(description="Animate StatsBomb passes.")
     parser.add_argument("--file", required=True, help="Path to StatsBomb events JSON file")
     parser.add_argument("--speed", type=float, default=1.0, help="Playback speed multiplier")
