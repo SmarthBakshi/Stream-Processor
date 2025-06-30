@@ -1,5 +1,3 @@
-Package         Version
---------------- -----------
 contourpy       1.3.2
 cycler          0.12.1
 ffmpeg          1.4
