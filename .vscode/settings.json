@@ -1,0 +1,39 @@
+{
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "terminal.integrated.minimumContrastRatio": 4.5, // improves color contrast
+    "terminal.integrated.drawBoldTextInBrightColors": true, // bold text in bright colors
+    "workbench.colorCustomizations": {
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiRed": "#FF5555",
+        "terminal.ansiGreen": "#50FA7B",
+        "terminal.ansiYellow": "#F1FA8C",
+        "terminal.ansiBlue": "#BD93F9",
+        "terminal.ansiMagenta": "#FF79C6",
+        "terminal.ansiCyan": "#8BE9FD",
+        "terminal.ansiWhite": "#BFBFBF",
+        "terminal.ansiBrightBlack": "#4D4D4D",
+        "terminal.ansiBrightRed": "#FF6E6E",
+        "terminal.ansiBrightGreen": "#69FF94",
+        "terminal.ansiBrightYellow": "#FFFFA5",
+        "terminal.ansiBrightBlue": "#D6ACFF",
+        "terminal.ansiBrightMagenta": "#FF92DF",
+        "terminal.ansiBrightCyan": "#A4FFFF",
+        "terminal.ansiBrightWhite": "#FFFFFF"
+    }
+}
