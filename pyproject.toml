@@ -24,6 +24,8 @@ seaborn = "^0.13.2"
 shap = "^0.48.0"
 six = ">=1.17.0,<2.0.0"
 xgboost = "^3.0.2"
+tqdm = "^4.67.1"
+argparse = "^1.4.0"
 
 [tool.poetry.scripts]
 animate-passes = "football_stream_processor.animate.animate_passes:main"
