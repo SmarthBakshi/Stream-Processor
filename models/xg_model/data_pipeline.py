@@ -128,7 +128,7 @@ def filter_pass_events(events: list[dict[str, any]]) -> list[dict[str, any]]:
     return [e for e in events if is_pass(e)]
 
 
-def build_all_passes_dataset(events_dir: Path, cache_path: Path = Path("../../pickle/pass_data.pkl"), limit: int = 1000) -> pd.DataFrame:
+def build_all_passes_dataset(events_dir: Path, cache_path: Path = Path("../../.pickle/pass_data.pkl"), limit: int = 1000) -> pd.DataFrame:
     """
     Process up to `limit` event JSON files in a directory and extract pass features into a single DataFrame.
     Caches the result to a pickle file.
@@ -168,7 +168,7 @@ def main():
     args = parser.parse_args()
 
     events_dir = Path(__file__).parents[2] / 'open-data' / 'data' / 'events'
-    cache_path = Path("../../pickle/pass_data.pkl")
+    cache_path = Path("../../.pickle/pass_data.pkl")
 
     df = build_all_passes_dataset(events_dir=events_dir, cache_path=cache_path, limit=args.limit)
     print(df)
