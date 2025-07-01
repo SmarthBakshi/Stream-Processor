@@ -10,16 +10,18 @@ import json
 import math
 import pandas as pd
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+import argparse
+from tqdm import tqdm
+from typing import Optional
 
 
-def load_events(json_path: str) -> List[Dict[str, Any]]:
+def load_events(json_path: str) -> list[dict[str, any]]:
     """
     Load events from a StatsBomb JSON file.
 
     :param json_path: Path to the StatsBomb events JSON file.
     :type json_path: str
-    :return: List of event dictionaries.
+    :return: list of event dictionaries.
     :rtype: list[dict]
     """
     with open(json_path, 'r') as f:
@@ -27,7 +29,7 @@ def load_events(json_path: str) -> List[Dict[str, Any]]:
     return events
 
 
-def is_pass(event: Dict[str, Any]) -> bool:
+def is_pass(event: dict[str, any]) -> bool:
     """
     Check if the event is a pass.
 
@@ -75,7 +77,7 @@ def calculate_angle(x1: float, y1: float, x2: float, y2: float) -> float:
     return math.atan2(y2 - y1, x2 - x1)
 
 
-def extract_pass_features(event: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+def extract_pass_features(event: dict[str, any]) -> Optional[dict[str, any]]:
     """
     Extract relevant features from a pass event.
 
@@ -114,44 +116,63 @@ def extract_pass_features(event: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     }
 
 
-def filter_pass_events(events: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def filter_pass_events(events: list[dict[str, any]]) -> list[dict[str, any]]:
     """
     Filter a list of events to only include passes.
 
-    :param events: List of event dictionaries.
+    :param events: list of event dictionaries.
     :type events: list[dict]
-    :return: List of pass event dictionaries.
+    :return: list of pass event dictionaries.
     :rtype: list[dict]
     """
     return [e for e in events if is_pass(e)]
 
 
-def build_pass_dataset(json_path: str) -> pd.DataFrame:
+def build_all_passes_dataset(events_dir: Path, cache_path: Path = Path(".pickle/pass_data.pkl"), limit: int = 1000) -> pd.DataFrame:
     """
-    Load JSON events, filter passes, extract features, and return a DataFrame.
+    Process up to `limit` event JSON files in a directory and extract pass features into a single DataFrame.
+    Caches the result to a pickle file.
 
-    :param json_path: Path to the StatsBomb events JSON file.
-    :type json_path: str
-    :return: DataFrame of pass features.
-    :rtype: pandas.DataFrame
+    :param events_dir: Path to the directory containing StatsBomb event JSON files.
+    :param cache_path: Path to the pickle file for caching.
+    :param limit: Maximum number of event files to process.
+    :return: DataFrame of all pass features.
     """
-    events = load_events(json_path)
-    pass_events = filter_pass_events(events)
-    features = [extract_pass_features(e) for e in pass_events]
-    # Remove None entries (incomplete data)
-    features = [f for f in features if f is not None]
-    df = pd.DataFrame(features)
+    if cache_path.exists():
+        print(f"[INFO] Loading cached data from {cache_path}")
+        return pd.read_pickle(cache_path)
+
+    print(f"[INFO] Processing up to {limit} event files in {events_dir}")
+    all_features = []
+
+    json_files = sorted(events_dir.glob("*.json"))[:limit]
+
+    for json_file in tqdm(json_files, desc="Processing JSON files"):
+        events = load_events(json_file)
+        pass_events = filter_pass_events(events)
+        features = [extract_pass_features(e) for e in pass_events if extract_pass_features(e) is not None]
+        all_features.extend(features)
+
+    df = pd.DataFrame(all_features)
+
+    # Ensure .pickle directory exists
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_pickle(cache_path)
+    print(f"[INFO] Cached pass dataset to {cache_path}")
+
     return df
 
-
 def main():
-    """
-    Example usage: Build and print a DataFrame of pass features from a sample file.
-    """
-    data_path = Path(__file__).parents[2] / 'open-data' / 'data' / 'events' / '22912.json'
-    df = build_pass_dataset(str(data_path))
-    print(df)
+    parser = argparse.ArgumentParser(description="Build pass dataset from StatsBomb event files.")
+    parser.add_argument("--limit", type=int, default=10, help="Maximum number of JSON files to process.")
+    args = parser.parse_args()
+
+    events_dir = Path(__file__).parents[2] / 'open-data' / 'data' / 'events'
+    cache_path = Path(".pickle/pass_data.pkl")
+
+    df = build_all_passes_dataset(events_dir=events_dir, cache_path=cache_path, limit=args.limit)
+    print(df.head())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
