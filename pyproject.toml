@@ -9,6 +9,7 @@ version = "0.1.0"
 [tool.poetry.dependencies]
 ffmpeg = ">=1.4,<2.0"
 fonttools = ">=4.58.4,<5.0.0"
+jupyter = "^1.1.1"
 kiwisolver = ">=1.4.8,<2.0.0"
 matplotlib = ">=3.10.3,<4.0.0"
 numpy = ">=1.26.0,<2.0.0"
@@ -19,14 +20,13 @@ pyparsing = ">=3.2.3,<4.0.0"
 python = ">=3.11,<3.12"
 python-dateutil = ">=2.9.0.post0,<3.0.0"
 scikit-learn = "^1.7.0"
+seaborn = "^0.13.2"
+shap = "^0.48.0"
 six = ">=1.17.0,<2.0.0"
 xgboost = "^3.0.2"
-shap = "^0.48.0"
-jupyter = "^1.1.1"
-seaborn = "^0.13.2"
 
 [tool.poetry.scripts]
-animate-passes = "football_stream_processor.animate_passes:main"
+animate-passes = "football_stream_processor.animate.animate_passes:main"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
