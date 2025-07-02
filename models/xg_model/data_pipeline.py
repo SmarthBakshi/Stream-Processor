@@ -111,7 +111,7 @@ def extract_pass_features(event: dict[str, any]) -> Optional[dict[str, any]]:
         'end_y': y2,
         'distance': distance,
         'angle': angle,
-        'success': success,
+        'pass_outcome': success,
         'minute': minute
     }
 
