@@ -5,9 +5,13 @@ This module provides a class-based interface for common EDA tasks such as
 missing value analysis, class imbalance checking, data type inspection, and duplicate removal.
 """
 import os
+import sys
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from football_stream_processor.models.xg_model.feat_engineering import add_engineered_features
+
+
 class PassDataEDA:
     """
     Class for performing EDA on football pass data.
@@ -16,7 +20,7 @@ class PassDataEDA:
     :type df: pd.DataFrame
     """
 
-    def __init__(self, df: pd.DataFrame, resources_dir: str = "../resources"):
+    def __init__(self, df: pd.DataFrame, resources_dir: str = "../resources/plots"):
         self.df = df
         self.resources_dir = resources_dir
         os.makedirs(self.resources_dir, exist_ok=True)
@@ -133,6 +137,7 @@ class PassDataEDA:
 
 def main():
     df = pd.read_pickle("../.pickle/pass_data.pkl") 
+    df = add_engineered_features(df)
     eda = PassDataEDA(df)
     eda.missing_values()
     eda.class_distribution()
