@@ -9,7 +9,7 @@ import sys
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from football_stream_processor.models.xg_model.feat_engineering import add_engineered_features
+from football_stream_processor.models.xg_model.feature_engineering import add_engineered_features
 
 
 class PassDataEDA:
@@ -134,6 +134,20 @@ class PassDataEDA:
 
         print(f"Visualizations saved in {self.resources_dir}")
 
+def basic_checks(df: pd.DataFrame = None) -> pd.DataFrame:
+    """Perform basic EDA checks on the pass data.
+    If no DataFrame is provided, it loads the default pass data from a pickle file. 
+    :param df: Optional DataFrame to analyze. If None, loads from pickle.
+    :type df: pd.DataFrame, optional
+    :return: Cleaned DataFrame after basic checks.
+    :rtype: pd.DataFrame
+    """    
+    df = pd.read_pickle("../.pickle/pass_data.pkl") 
+    df = add_engineered_features(df)
+    eda = PassDataEDA(df)
+    eda.missing_values()
+    df_clean = eda.remove_duplicates()
+    return df_clean
 
 def main():
     df = pd.read_pickle("../.pickle/pass_data.pkl") 
