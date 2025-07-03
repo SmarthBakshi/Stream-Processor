@@ -26,6 +26,8 @@ football_stream_processor/
 ├── scripts/               # Scripts
 │   └── eda.py             # EDA 
 │
+├── resources/             # Contains visualizations, figures, and generated assets
+│
 ├── src/football_stream_processor/  # Source code for the project
 │   ├── __init__.py
 │   │
