@@ -20,33 +20,40 @@ A modular Python project for extracting, processing, analyzing, and visualizing 
 ```
 football_stream_processor/
 │
-├── data/                  # Raw and processed data
-│   ├── open-data/         # Downloaded StatsBomb open data
-│   └── processed/         # Processed data ready for analysis
+├── open-data/             # Downloaded StatsBomb open data
 │
-├── docs/                  # Documentation files
+├── scripts/               # Scripts
+│   └── eda.py             # EDA 
 │
-├── football_stream_processor/  # Source code for the project
+├── src/football_stream_processor/  # Source code for the project
 │   ├── __init__.py
-│   ├── config.py          # Configuration settings
+│   │
+│   ├── animate/           # Contains animation visualizations script
+│   │   ├── __init.py__
+│   │   ├── animate_match.py    # Animates the entire match
+│   │   └── animate_passes.py   # Animates match passes
+│   │
+│   ├── match/            # Contains match related scripts
+│   │   ├── __init.py__
+│   │   ├── match_summary.py    # Gives match summary
+│   │   └── simualte.py    # Simulates match events in real time
+│   │
 │   ├── models/            # Machine learning models
 │   │   ├── __init__.py
-│   │   ├── xg_model/      # Expected goals model
-│   │   └── ...
+│   │   ├── xg_model/      # Pass prediction model
+│   │   └── player_roles/  # Upcoming model
 │   │
 │   ├── utils/             # Utility functions and classes
 │   │   ├── __init__.py
-│   │   ├── data_utils.py  # Data loading and processing utilities
-│   │   ├── viz_utils.py   # Visualization utilities
-│   │   └── ...
-│   │
-│   └── ...
+│   │   └── eda_utils.py  # EDA utility functions
 │
-├── tests/                 # Unit and integration tests
 │
 ├── .gitignore             # Git ignore file
+├── .gitmodules            # Git modules file
 ├── README.md              # Project README
-└── requirements.txt       # Python package dependencies
+├── poetry.lock            # poetry lock file
+├── pyproject.toml         # Contains dependencies
+└── .python-version        # Contains python versions
 ```
 
 ---
@@ -55,18 +62,20 @@ football_stream_processor/
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/football_stream_processor.git
+    git clone https://github.com/SmarthBakshi/football_stream_processor.git
     cd football_stream_processor
     ```
 
-2. **Install dependencies:**
+2. **Install Poetry (if not already installed)**
     ```sh
-    pip install -r requirements.txt
+    curl -sSL https://install.python-poetry.org | python3 -
     ```
-    Or use [Poetry](https://python-poetry.org/) if preferred.
 
-3. **Download StatsBomb open data:**
-    - Place event JSON files in [events](http://_vscodecontentref_/1).
+3. **Install dependencies:**
+    ```sh
+    poetry install 
+    ```
+
 
 ---
 
