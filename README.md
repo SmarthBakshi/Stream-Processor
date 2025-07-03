@@ -1,6 +1,6 @@
 # Football Stream Processor
 
-A modular Python project for extracting, processing, analyzing, and visualizing football (soccer) event data, with a focus on passes, carries, and shots. The project supports feature engineering, exploratory data analysis (EDA), and animation of match events using StatsBomb open data.
+A modular Python project for extracting, processing, analyzing, and visualizing football (soccer) event data, with a focus on passes, carries, and shots. The project features advanced machine learning models for predicting pass success, alongside robust support for feature engineering, exploratory data analysis (EDA), and animated visualizations of match events using StatsBomb open data.
 
 ---
 
@@ -8,6 +8,7 @@ A modular Python project for extracting, processing, analyzing, and visualizing 
 
 - **Data Pipeline:** Load, filter, and process StatsBomb event data for passes, carries, and shots.
 - **Feature Engineering:** Add tactical, spatial, and contextual features for modeling (e.g., xG, pass success).
+- **Machine Learning Model:** Advanced machine learning models for predicting pass success.
 - **Exploratory Data Analysis (EDA):** Modular, reusable EDA utilities for missing values, class distribution, data types, duplicate removal, and visualizations.
 - **Visualization:** Animated and static visualizations of passes, carries, and shots on a football pitch.
 - **OOP Design:** Extensible, class-based utilities for EDA and feature engineering.
@@ -43,9 +44,9 @@ football_stream_processor/
 │   │   ├── xg_model/      # Pass prediction model
 │   │   └── player_roles/  # Upcoming model
 │   │
-│   ├── utils/             # Utility functions and classes
-│   │   ├── __init__.py
-│   │   └── eda_utils.py  # EDA utility functions
+│   └── utils/             # Utility functions and classes
+│       ├── __init__.py
+│       └── eda_utils.py  # EDA utility functions
 │
 │
 ├── .gitignore             # Git ignore file
