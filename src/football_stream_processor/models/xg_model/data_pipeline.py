@@ -167,8 +167,8 @@ def main():
     parser.add_argument("--limit", type=int, default=10, help="Maximum number of JSON files to process.")
     args = parser.parse_args()
 
-    events_dir = Path(__file__).parents[2] / 'open-data' / 'data' / 'events'
-    cache_path = Path("../../.pickle/pass_data.pkl")
+    events_dir = Path(__file__).parents[4] / 'open-data' / 'data' / 'events'
+    cache_path = Path(__file__).parents[4] / '.pickle' / 'pass_data.pkl'
 
     df = build_all_passes_dataset(events_dir=events_dir, cache_path=cache_path, limit=args.limit)
     print(df)
