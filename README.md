@@ -81,21 +81,25 @@ football_stream_processor/
 
 ## Usage
 
-### Data Pipeline & Feature Engineering
+### Data Preparation
 
-```python
-from football_stream_processor.models.xg_model.data_pipeline import build_pass_dataset
-from football_stream_processor.models.xg_model.feat_engineering import add_engineered_features
+To prepare the pass data dataframe, run:
 
-df = build_pass_dataset("open-data/data/events/22912.json")
-df = add_engineered_features(df)
+```bash
+poetry run python data_pipeline.py --limit 100
 ```
 
-### Exploratory Data Analysis (EDA)
+The `--limit` argument specifies the number of event JSON files to use for preparing the `pass_data` dataframe.
+
+
+### Exploratory Data Analysis (EDA) & Feature Engineering
 
 ```python
 from football_stream_processor.utils.eda_utils import PassDataEDA
+from football_stream_processor.models.xg_model.feat_engineering import add_engineered_features
 
+df = pd.read_pickle(".pickle/pass_data.pkl")
+df = add_engineered_features(df)
 eda = PassDataEDA(df)
 eda.missing_values()
 eda.class_distribution()
@@ -109,9 +113,15 @@ eda.eda_visualizations()  # Visualizations saved in resources/
 
 ```bash
 python animate/animate_passes.py --file open-data/data/events/22912.json --save
-python animate/animate_carries_shots.py --file open-data/data/events/22912.json --save
+python animate/animate_match.py --file open-data/data/events/22912.json --save
 ```
+### Model Training & Evaluation
 
+To train the xG prediction model, run:
+
+```bash
+python src/football_stream_processor/models/xg_model/train.py
+```
 ---
 
 ## Customization
@@ -119,12 +129,6 @@ python animate/animate_carries_shots.py --file open-data/data/events/22912.json 
 - **Add new features:** Extend `feat_engineering.py` with new feature functions.
 - **Add new EDA steps:** Extend `eda_utils.py` or subclass `PassDataEDA`.
 - **Visualizations:** Modify or add new plotting functions in the `animate/` directory.
-
----
-
-## Contributing
-
-Pull requests and issues are welcome! Please lint and test your code before submitting.
 
 ---
 
@@ -137,4 +141,3 @@ This project is licensed under the MIT License.
 ## Acknowledgements
 
 - [StatsBomb Open Data](https://github.com/statsbomb/open-data)
-- [matplotlib](https://matplotlib.org/)
