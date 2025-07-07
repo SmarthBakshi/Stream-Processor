@@ -11,8 +11,6 @@ A modular Python project for extracting, processing, analyzing, and visualizing 
 - **Machine Learning Model:** Advanced machine learning models for predicting pass success.
 - **Exploratory Data Analysis (EDA):** Modular, reusable EDA utilities for missing values, class distribution, data types, duplicate removal, and visualizations.
 - **Visualization:** Animated and static visualizations of passes, carries, and shots on a football pitch.
-- **OOP Design:** Extensible, class-based utilities for EDA and feature engineering.
-- **CLI Support:** Run scripts from the command line for data processing and visualization.
 
 ---
 
@@ -25,6 +23,8 @@ football_stream_processor/
 │
 ├── scripts/               # Scripts
 │   └── eda.py             # EDA 
+│
+├── resources/             # Contains visualizations, figures, and generated assets
 │
 ├── src/football_stream_processor/  # Source code for the project
 │   ├── __init__.py

@@ -3,16 +3,14 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.linear_model import LogisticRegression
 from model import get_model
-from evaluation import print_classification_report, print_roc_auc, plot_confusion_matrix
 from utils import save_model
 from data_preparation import load_and_prepare_data
+from football_stream_processor.config import MODEL_NAME, MODEL_SAVE_PATH
+from evaluation import print_classification_report, print_roc_auc, plot_confusion_matrix
 
 def main():
     
-    model_save_path = os.path.expanduser("~/projects/football_stream_processor/models/linear_model.pkl")
-
     X_train, X_test, y_train, y_test = load_and_prepare_data()
 
     categorical_features = ["length_bucket", "minute_bucket"]
@@ -49,7 +47,7 @@ def main():
 
     model = Pipeline(steps=[
         ("preprocessor", preprocessor),
-        ("classifier", get_model("xgboost"))
+        ("classifier", get_model(MODEL_NAME))
     ])
 
     model.fit(X_train, y_train)
@@ -61,9 +59,9 @@ def main():
     print_roc_auc(y_test, y_probs)
     plot_confusion_matrix(y_test, y_pred)
     
-    os.makedirs(os.path.dirname(model_save_path), exist_ok=True)
-    save_model(model, model_save_path)
-    print(f"Model saved to {model_save_path}")
+    os.makedirs(os.path.dirname(MODEL_SAVE_PATH), exist_ok=True)
+    save_model(model, MODEL_SAVE_PATH)
+    print(f"Model saved to {MODEL_SAVE_PATH}")
 
 if __name__ == "__main__":
     main()
