@@ -49,7 +49,7 @@ def main():
 
     model = Pipeline(steps=[
         ("preprocessor", preprocessor),
-        ("classifier", get_model("logistic_regression"))
+        ("classifier", get_model("xgboost"))
     ])
 
     model.fit(X_train, y_train)
