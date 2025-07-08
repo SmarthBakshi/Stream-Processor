@@ -1,12 +1,13 @@
 [tool.poetry]
 authors = ["Smarth <bakshismarth.99@gmail.com>"]
-description = "This project processes a stream of sports data, specifically from Soccer leagues and generates insights"
+description = "This project processes a stream of sports data, specifically from Soccer leagues, applies ML and generates insights"
 name = "football-stream-processor"
 packages = [{include = "football_stream_processor", from = "src"}]
 readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
+argparse = "^1.4.0"
 ffmpeg = ">=1.4,<2.0"
 fonttools = ">=4.58.4,<5.0.0"
 jupyter = "^1.1.1"
@@ -23,9 +24,9 @@ scikit-learn = "^1.7.0"
 seaborn = "^0.13.2"
 shap = "^0.48.0"
 six = ">=1.17.0,<2.0.0"
-xgboost = "^3.0.2"
 tqdm = "^4.67.1"
-argparse = "^1.4.0"
+xgboost = "^3.0.2"
+mlflow = "^3.1.1"
 
 [tool.poetry.scripts]
 animate-passes = "football_stream_processor.animate.animate_passes:main"
