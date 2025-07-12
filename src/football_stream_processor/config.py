@@ -10,3 +10,4 @@ MODEL_SAVE_PATH = MODEL_DIR + "/" + MODEL_FILENAME_TEMPLATE.format(model_name=MO
 PLOT_DIR = "resources/plots"
 PICKLE_DIR = ".pickle"
 RESOURCES_DIR = "resources"
+# Maybe make a config class with defaults? 

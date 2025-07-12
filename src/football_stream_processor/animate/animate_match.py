@@ -1,10 +1,12 @@
-import json
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation, FFMpegWriter
-from matplotlib.patches import Circle
-from datetime import datetime
 import argparse
+import json
 import os
+from datetime import datetime
+
+import matplotlib.pyplot as plt
+from matplotlib.animation import FFMpegWriter, FuncAnimation
+from matplotlib.patches import Circle
+
 
 def parse_time(timestamp):
     """
@@ -15,7 +17,7 @@ def parse_time(timestamp):
     :return: Corresponding datetime object
     :rtype: datetime
     """
-    return datetime.strptime(timestamp, "%H:%M:%S.%f")
+    return datetime.strptime(timestamp, "%H:%M:%S.%f") # Should be part of a "StatsbombLoader" class
 
 def load_events(filepath):
     """
@@ -30,6 +32,10 @@ def load_events(filepath):
     with open(filepath) as f:
         events = json.load(f)
     actions = []
+
+    # Add separate types for the events - consider dataclasses or pydantic models
+    # The logic here seems a bit complex - maybe split parsing and filtering
+    # Imo, the "animate" package should really just animate given data to a plot
     for e in events:
         # Passes
         if (
@@ -86,6 +92,8 @@ def draw_pitch(ax, pitch_color="green"):
     :param pitch_color: Background color of the pitch
     :type pitch_color: str
     """
+    # Where do the numbers come from?
+    # Create a class for the pitch
     ax.set_facecolor(pitch_color)
     ax.plot([0, 0, 120, 120, 0], [0, 80, 80, 0, 0], color="black")
     ax.plot([60, 60], [0, 80], color="black", linestyle="--")
@@ -129,6 +137,8 @@ def animate_events(actions, speed=1.0, interval_ms=100, save=False):
     arrows = []
     ball = None  # Will hold the ball patch
 
+    # Why nesting the function?
+    # Especially since the nested function is quite long, this clutters the main function
     def update(frame):
         """
         Update function for each animation frame.
@@ -143,6 +153,7 @@ def animate_events(actions, speed=1.0, interval_ms=100, save=False):
             ball.remove()
             ball = None
         # Find the latest action up to current_time
+        # Make this a separate function
         latest_action = None
         for a in actions:
             if a["time_sec"] <= current_time:
@@ -159,6 +170,7 @@ def animate_events(actions, speed=1.0, interval_ms=100, save=False):
             a = actions_queue.pop(0)
             start = a["start"]
             end = a["end"]
+            # Models .. ;)
             if a["type"] == "pass":
                 color = "blue"
                 alpha = 0.6
@@ -188,12 +200,15 @@ def animate_events(actions, speed=1.0, interval_ms=100, save=False):
         output_path = "../resources/animation_all_events.mp4"
         os.makedirs("../resources", exist_ok=True)
         print(f"🎞️  Exporting video to {output_path} ...")
+        # Maybe make the fps configurable? Consider palying with different inputs, yml, json, ini - etc...
+        # I'd look into yml
         writer = FFMpegWriter(fps=10)
         anim.save(output_path, writer=writer)
         print("✅ Video saved.")
     else:
         plt.show()
 
+# Should not be part of a package - rather put into a script.
 def main():
     """
     Main function to parse arguments and run the animation.

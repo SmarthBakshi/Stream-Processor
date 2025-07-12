@@ -2,7 +2,11 @@
 import json
 from collections import defaultdict
 
+
+# This function is way to long and has too much levels
+# Better naming would be summarize_match_metrics?
 def analyze_match_metrics(json_path):
+    
     with open(json_path, "r") as f:
         data = json.load(f)
 
@@ -52,6 +56,7 @@ def analyze_match_metrics(json_path):
     pass_accuracy = {team: (pass_completions[team] / pass_attempts[team]) * 100 if pass_attempts[team] else 0 for team in pass_attempts}
     pressure_success_rate = {team: (successful_pressures[team] / pressures[team]) * 100 if pressures[team] else 0 for team in pressures}
 
+    # Should be a dataclass
     summary_metrics = {
         "Pass Accuracy (%)": pass_accuracy,
         "Carries": dict(carry_counts),
@@ -66,6 +71,7 @@ def analyze_match_metrics(json_path):
 
     return summary_metrics
 
+# You know, what to do :D
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 2:
@@ -75,4 +81,5 @@ if __name__ == "__main__":
         for key, value in metrics.items():
             print(f"\n{key}:")
             for team, val in value.items():
+                print(f"  {team}: {val:.2f}" if isinstance(val, float) else f"  {team}: {val}")
                 print(f"  {team}: {val:.2f}" if isinstance(val, float) else f"  {team}: {val}")

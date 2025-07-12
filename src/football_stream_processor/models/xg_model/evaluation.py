@@ -1,7 +1,10 @@
-from sklearn.metrics import classification_report, roc_auc_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.metrics import (classification_report, confusion_matrix,
+                             roc_auc_score)
 
+
+# Filename is not quite fitting I suppose
 def print_classification_report(y_true, y_pred):
     print(classification_report(y_true, y_pred))
 
@@ -15,4 +18,4 @@ def plot_confusion_matrix(y_true, y_pred):
     plt.xlabel("Predicted")
     plt.ylabel("Actual")
     plt.title("Confusion Matrix")
-    plt.show()
+    plt.show()    plt.show()

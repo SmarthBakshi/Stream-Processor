@@ -1,13 +1,17 @@
 import os
+
 import pandas as pd
 
-from .utils import load_model
+# Would to a full import using the poetry package. Its more robust
 from .feature_engineering import add_engineered_features
+from .utils import load_model
+
 
 def predict_pass_outcome(model_path: str, input_df: pd.DataFrame):
     model = load_model(model_path)
     df = add_engineered_features(input_df)
     
+    # Make configurable
     features = [
         "start_x", "start_y", "end_x", "end_y",
         "distance", "angle", "is_forward", "progressive",
@@ -20,6 +24,8 @@ def predict_pass_outcome(model_path: str, input_df: pd.DataFrame):
     return preds
 
 def main():
+
+    # You should not work on paths outside the repo I think - maybe users do not want to save data on their system outside the repo
     model_path = os.path.expanduser("~/models/linear_model.pkl")
     # Example input CSV with same features except target
     input_path = os.path.expanduser("~/data/pass_new.csv")

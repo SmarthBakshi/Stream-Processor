@@ -1,10 +1,14 @@
 # src/football_stream_processor/utils/eda_utils.py
 
 import os
+
+import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-import matplotlib.pyplot as plt
-from football_stream_processor.models.xg_model.feature_engineering import add_engineered_features
+
+from football_stream_processor.models.xg_model.feature_engineering import \
+    add_engineered_features
+
 
 class PassDataEDA:
     """
@@ -55,6 +59,7 @@ class PassDataEDA:
                   Returns an empty Series if the column is not found.
         :rtype: pd.Series
         """
+        # Use logging module
         print("=== Class Distribution ===")
         if target_col in self.df.columns:
             counts = self.df[target_col].value_counts()

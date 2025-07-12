@@ -1,16 +1,21 @@
 import os
-from sklearn.pipeline import Pipeline
+
+from data_preparation import load_and_prepare_data
+from evaluation import (plot_confusion_matrix, print_classification_report,
+                        print_roc_auc)
+from model import get_model
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from model import get_model
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from utils import save_model
-from data_preparation import load_and_prepare_data
+
 from football_stream_processor.config import MODEL_NAME, MODEL_SAVE_PATH
-from evaluation import print_classification_report, print_roc_auc, plot_confusion_matrix
+
 
 def main():
     
+    #lowercase
     X_train, X_test, y_train, y_test = load_and_prepare_data()
 
     categorical_features = ["length_bucket", "minute_bucket"]
