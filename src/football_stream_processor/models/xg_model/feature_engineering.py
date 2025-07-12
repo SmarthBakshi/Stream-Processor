@@ -6,6 +6,8 @@ Adds tactical, spatial, and contextual derived features to the dataset.
 
 import pandas as pd
 
+
+# A dedicated file for one function? 
 def add_engineered_features(df: pd.DataFrame) -> pd.DataFrame:
     """
     Add engineered features to the pass dataframe.
@@ -57,5 +59,7 @@ def add_engineered_features(df: pd.DataFrame) -> pd.DataFrame:
 
     # Absolute angle (for direction-agnostic passes)
     df["abs_angle"] = df["angle"].abs()
+
+    return df
 
     return df

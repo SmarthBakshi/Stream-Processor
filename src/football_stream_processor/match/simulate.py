@@ -8,6 +8,7 @@ import json
 import time
 from datetime import datetime
 
+# Should be configurable!
 # Load the JSON file
 with open("../open-data/data/events/22912.json") as f:
     events = json.load(f)

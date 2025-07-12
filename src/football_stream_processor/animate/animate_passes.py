@@ -4,15 +4,17 @@ Animate and visualize passes from StatsBomb event data.
 This script loads event data, extracts passes, and animates them on a football pitch.
 """
 
-import json
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation, FFMpegWriter
-from matplotlib.patches import Circle
-from datetime import datetime
 import argparse
+import json
 import os
+from datetime import datetime
+
+import matplotlib.pyplot as plt
+from matplotlib.animation import FFMpegWriter, FuncAnimation
+from matplotlib.patches import Circle
 
 
+# Make this a separate class - just loading the data from json -> model
 def load_events(filepath):
     """
     Load and parse StatsBomb event JSON for passes.
@@ -40,7 +42,7 @@ def load_events(filepath):
 
     return passes
 
-
+# Duplicated?
 def parse_time(timestamp):
     """
     Convert StatsBomb timestamp string to datetime.
@@ -53,6 +55,7 @@ def parse_time(timestamp):
     return datetime.strptime(timestamp, "%H:%M:%S.%f")
 
 
+# Isnt this even duplicating the match pitch?
 def draw_pitch(ax, pitch_color="#00E700"):
     """
     Draw a full football pitch on given Axes.
@@ -83,6 +86,8 @@ def draw_pitch(ax, pitch_color="#00E700"):
     ax.axis("off")
 
 
+# Mising the typehints on function returns
+# Idea - try adding a static typechecker like mypy (pre-commit, CI-job?)
 def animate_passes(passes, speed=1.0, interval_ms=100, save=False):
     """
     Create an animation of passes and optionally save as video.
@@ -101,10 +106,13 @@ def animate_passes(passes, speed=1.0, interval_ms=100, save=False):
     ax.set_title("Pass Animation")
     draw_pitch(ax)
 
+    # Separate logic from plotting. A plotting function should not have to sort input data
     passes = sorted(passes, key=lambda p: p["time_sec"])
     passes_queue = passes.copy()
     arrows = []
 
+    # Nested function is a bad coding style imo - better make it a separate function
+    # Does "working data" need to be saved for animating? Make it a class?
     def update(frame):
         """
         Update function for each animation frame.
@@ -144,6 +152,7 @@ def animate_passes(passes, speed=1.0, interval_ms=100, save=False):
         plt.show()
 
 
+# Put to a script, not module
 def main():
     """
     Main function to parse arguments and run the animation.
@@ -169,5 +178,7 @@ def main():
         print(f"❌ Error: {e}")
 
 
+if __name__ == "__main__":
+    main()
 if __name__ == "__main__":
     main()
