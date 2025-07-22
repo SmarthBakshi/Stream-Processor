@@ -139,6 +139,7 @@ class PassDataEDA:
         fig = plt.figure(figsize=(10, 6))
         sns.scatterplot(x="angle", y="distance", hue="pass_outcome", data=self.df, alpha=0.4)
         plt.title("Distance vs Angle by Pass Outcome")
+        plt.legend(title="Outcome", loc ='upper right')
         plt.savefig(os.path.join(self.resources_dir, "distance_vs_angle_by_outcome.png"))
         plt.close()
 
