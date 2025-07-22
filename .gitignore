@@ -7,3 +7,5 @@ TODO.*
 *.png
 mlruns/
 resources/
+**/mlflow.runName
+**/meta.yaml
