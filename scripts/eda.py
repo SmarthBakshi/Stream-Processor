@@ -17,11 +17,16 @@ def main():
         df_clean = eda.remove_duplicates()
         eda.eda_visualizations()
 
+        # Log the DataFrame
+        mlflow.log_artifact(".pickle/pass_data.pkl", artifact_path="data")
+        
         # Log plots manually if saved to disk
         plot_dir = "resources/plots"
         for plot_file in os.listdir(plot_dir):
             full_path = os.path.join(plot_dir, plot_file)
             mlflow.log_artifact(full_path)
+            
+        print("EDA completed and logged to MLflow.")
 
 if __name__ == "__main__":
     main()
