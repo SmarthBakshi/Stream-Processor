@@ -13,7 +13,9 @@ fonttools = ">=4.58.4,<5.0.0"
 jupyter = "^1.1.1"
 kiwisolver = ">=1.4.8,<2.0.0"
 matplotlib = ">=3.10.3,<4.0.0"
+mlflow = "^3.1.1"
 numpy = ">=1.26.0,<2.0.0"
+optuna = "^4.4.0"
 packaging = ">=25.0,<26.0"
 pandas = "^2.3.0"
 pillow = ">=11.2.1,<12.0.0"
@@ -26,11 +28,10 @@ shap = "^0.48.0"
 six = ">=1.17.0,<2.0.0"
 tqdm = "^4.67.1"
 xgboost = "^3.0.2"
-mlflow = "^3.1.1"
-optuna = "^4.4.0"
 
 [tool.poetry.scripts]
 animate-passes = "football_stream_processor.animate.animate_passes:main"
+train-xg-model = "football_stream_processor.models.xg_model.train:main"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
