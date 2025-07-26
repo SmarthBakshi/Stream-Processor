@@ -12,4 +12,4 @@ done
 
 # Start MLflow (Poetry environment)
 echo "Starting MLflow UI on port $PORT..."
-poetry run mlflow ui --port $PORT --backend-store-uri file:./mlflow/mlruns --default-artifact-root ./\mlflow/mlartifacts
+poetry run mlflow ui --port $PORT --backend-store-uri file:./mlflow/mlruns --default-artifact-root ./mlflow/mlartifacts
