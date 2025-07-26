@@ -19,7 +19,8 @@ from football_stream_processor.config import (
     MODEL_NAME,
     MODEL_SAVE_PATH,
     MLFLOW_EXPERIMENT_NAME,
-    MLFLOW_TRACKING_URI
+    MLFLOW_TRACKING_URI,
+    MLFLOW_REGISTRY_URI
 )
 from evaluation import print_classification_report, print_roc_auc, plot_confusion_matrix
 
@@ -121,6 +122,7 @@ def get_latest_registered_model():
 
 def main():
     mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
+    mlflow.set_registry_uri(MLFLOW_REGISTRY_URI)
     mlflow.set_experiment(MLFLOW_EXPERIMENT_NAME)
 
     # Check MLflow registry for a model

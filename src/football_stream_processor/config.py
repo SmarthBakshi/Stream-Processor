@@ -20,7 +20,8 @@ MLFLOW_RUNS = MLFLOW_DIR / "mlruns"
 MLFLOW_ARTIFACTS = MLFLOW_DIR / "mlartifacts"
 
 # MLflow Configuration
-MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:5000")  # Can also use local file path
+MLFLOW_TRACKING_URI = f"file://{MLFLOW_RUNS}"
+MLFLOW_REGISTRY_URI = f"file://{MLFLOW_ARTIFACTS}"
 MLFLOW_EXPERIMENT_NAME = "football-pass-prediction"
 MLFLOW_RUN_NAME = f"{MODEL_NAME}-run-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
 MLFLOW_ARTIFACT_PATH = "mlruns"
