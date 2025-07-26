@@ -1,5 +1,7 @@
-import streamlit as st
 import os
+import json
+import streamlit as st
+from utils.mlflow_utils import get_best_run
 
 st.set_page_config(page_title="Football Stream Processor", layout="wide")
 
@@ -23,13 +25,17 @@ if page == "📊 EDA & Visualizations":
 
 elif page == "🤖 Model Results":
     st.title("🤖 Model Performance")
-    st.metric("Best Accuracy", "0.84")
-    st.write("Best Hyperparameters:")
-    st.json({
-        "learning_rate": 0.01,
-        "max_depth": 5,
-        "n_estimators": 100
-    })
+
+    run = get_best_run()
+    if run:
+        st.metric("Best Accuracy", run.data.metrics.get("accuracy", "N/A"))
+        st.subheader("📌 Parameters")
+        st.json(run.data.params)
+        st.subheader("📈 Metrics")
+        st.json(run.data.metrics)
+    else:
+        st.warning("⚠️ No MLFlow runs found.")
+
 
 elif page == "⚽ Match Simulation":
     st.title("⚽ Simulate a Match")
