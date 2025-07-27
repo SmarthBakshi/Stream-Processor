@@ -30,6 +30,7 @@ tqdm = "^4.67.1"
 xgboost = "^3.0.2"
 docker = "^7.1.0"
 streamlit = "^1.47.1"
+plotly = "^6.2.0"
 
 [tool.poetry.scripts]
 animate-passes = "football_stream_processor.animate.animate_passes:main"
