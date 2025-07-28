@@ -15,6 +15,7 @@ MODEL_SAVE_PATH = os.path.join(MODEL_DIR, MODEL_FILENAME_TEMPLATE.format(model_n
 PLOT_DIR = "resources/plots"
 PICKLE_DIR = ".pickle"
 RESOURCES_DIR = "resources"
+DATA_DIR = "open-data/data"
 MLFLOW_DIR = ROOT_DIR / "mlflow"
 MLFLOW_RUNS = MLFLOW_DIR / "mlruns"
 MLFLOW_ARTIFACTS = MLFLOW_DIR / "mlartifacts"
