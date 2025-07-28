@@ -3,6 +3,8 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 import mlflow
+from utils.mlflow_utils import fetch_xgboost_runs
+from utils.simulate_utils import load_dummy_events, render_match_simulator
 from mlflow.tracking import MlflowClient
 from football_stream_processor.config import MLFLOW_TRACKING_URI
 
@@ -12,35 +14,6 @@ page = st.sidebar.radio("Navigation", ["Overview", "Pass Analysis", "Model Insig
 
 teams = ["Barcelona", "Real Madrid"]
 players = ["Messi", "Modric", "Benzema"]
-
-def fetch_xgboost_runs(experiment_name="football-pass-prediction"):
-    mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
-    client = MlflowClient()
-    experiment = client.get_experiment_by_name(experiment_name)
-    if experiment is None:
-        return pd.DataFrame(), None
-    runs = client.search_runs(
-        experiment_ids=[experiment.experiment_id],
-        order_by=["metrics.accuracy DESC"],
-        max_results=50
-    )
-    records = []
-    for r in runs:
-        params = r.data.params
-        metrics = r.data.metrics
-        records.append({
-            "Run ID": r.info.run_id,
-            "Accuracy": metrics.get("accuracy"),
-            "ROC AUC": metrics.get("roc_auc"),
-            "Precision": metrics.get("precision"),
-            "Recall": metrics.get("recall"),
-            "max_depth": params.get("max_depth"),
-            "learning_rate": params.get("learning_rate"),
-            "n_estimators": params.get("n_estimators")
-        })
-    df = pd.DataFrame(records)
-    best_run = df.iloc[0] if not df.empty else None
-    return df, best_run
 
 if page == "Overview":
     st.title("ML-powered Football Analytics Dashboard")
@@ -144,14 +117,9 @@ elif page == "Model Insights":
 elif page == "Match Simulator":
     st.header("Match Simulator")
     match = st.selectbox("Select Match", ["Barcelona vs Real Madrid", "Team C vs Team D"])
-    fig_sim = go.Figure()
-    fig_sim.add_trace(go.Scatter(x=[20, 40, 60], y=[30, 50, 40], mode="lines+markers", line=dict(color="orange")))
-    fig_sim.update_layout(title="Pass Sequence Simulation", xaxis=dict(visible=False), yaxis=dict(visible=False), plot_bgcolor="green")
-    st.plotly_chart(fig_sim, use_container_width=True)
-    time = np.linspace(0, 90, 10)
-    xg1, xg2 = np.cumsum(np.random.rand(10)), np.cumsum(np.random.rand(10))
-    fig_xg_sim = go.Figure()
-    fig_xg_sim.add_trace(go.Scatter(x=time, y=xg1, name=teams[0], line=dict(color="blue")))
-    fig_xg_sim.add_trace(go.Scatter(x=time, y=xg2, name=teams[1], line=dict(color="red")))
-    fig_xg_sim.update_layout(title="Live xG Progression", xaxis_title="Minutes", yaxis_title="xG")
-    st.plotly_chart(fig_xg_sim, use_container_width=True)
+
+    # Load dummy events for now (replace with real StatsBomb later)
+    events, xg_team1, xg_team2, times = load_dummy_events()
+
+    # Render the simulator
+    render_match_simulator(events, xg_team1, xg_team2, times)
