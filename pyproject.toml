@@ -1,7 +1,7 @@
 [tool.poetry]
 authors = ["Smarth <bakshismarth.99@gmail.com>"]
 description = "This project processes a stream of sports data, specifically from Soccer leagues, applies ML and generates insights"
-name = "football-stream-processor"
+name = "football_stream_processor"
 packages = [{include = "football_stream_processor", from = "src"}]
 readme = "README.md"
 version = "0.1.0"
