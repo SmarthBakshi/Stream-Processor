@@ -7,12 +7,13 @@ from utils.mlflow_utils import fetch_xgboost_runs
 from utils.simulate_utils import load_matches, load_match_events, render_match_simulator
 from mlflow.tracking import MlflowClient
 from football_stream_processor.config import MLFLOW_TRACKING_URI
+from match_analysis_page import match_analysis_page
 
 
 def main():
     st.set_page_config(page_title="Football Analytics Dashboard", layout="wide")
 
-    page = st.sidebar.radio("Navigation", ["Overview", "Pass Analysis", "Model Insights", "Match Simulator"])
+    page = st.sidebar.radio("Navigation", ["Overview", "Match Analysis", "Model Insights"])
 
     teams = ["Barcelona", "Real Madrid"]
     players = ["Messi", "Modric", "Benzema"]
@@ -27,24 +28,10 @@ def main():
         """)
         st.markdown("**View Code on [GitHub](https://github.com/)**")
 
-    elif page == "Pass Analysis":
-        st.header("Pass Analysis")
-        col1, col2, col3 = st.columns(3)
-        team = col1.selectbox("Select Team", teams)
-        player = col2.selectbox("Select Player", players)
-        time_range = col3.slider("Select Time Range (min)", 0, 90, (0, 45))
-        fig_pitch = go.Figure()
-        fig_pitch.add_trace(go.Scatter(x=[20, 50], y=[30, 60], mode="lines+markers", line=dict(color="red")))
-        fig_pitch.update_layout(title="Pass Map", xaxis=dict(visible=False), yaxis=dict(visible=False), plot_bgcolor="green")
-        st.plotly_chart(fig_pitch, use_container_width=True)
-        time = np.linspace(0, 90, 10)
-        xg_A, xg_B = np.cumsum(np.random.rand(10)), np.cumsum(np.random.rand(10))
-        fig_xg = go.Figure()
-        fig_xg.add_trace(go.Scatter(x=time, y=xg_A, name=teams[0], line=dict(color="blue")))
-        fig_xg.add_trace(go.Scatter(x=time, y=xg_B, name=teams[1], line=dict(color="red")))
-        fig_xg.update_layout(title="xG Over Time", xaxis_title="Minutes", yaxis_title="xG")
-        st.plotly_chart(fig_xg, use_container_width=True)
+    elif page == "Match Analysis":
+        match_analysis_page()
 
+        
     elif page == "Model Insights":
         st.header("Model Insights")
         st.write("Fetching all Optuna trials for XGBoost from MLflow...")
