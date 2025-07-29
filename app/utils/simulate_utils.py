@@ -78,6 +78,38 @@ def load_match_events(match_id):
 
     return passes, xg_team1, xg_team2, times
 
+def get_pass_network_data(match_id):
+    """
+    Parses pass events from StatsBomb event data for a given match and aggregates 
+    the number of passes between each passer-receiver pair within the same team.
+    
+    Returns a DataFrame with: ['passer', 'receiver', 'count', 'team']
+    """
+    path = os.path.join(DATA_DIR, "events", f"{match_id}.json")
+    with open(path, "r", encoding="utf-8") as f:
+        events = json.load(f)
+
+    data = []
+    for e in events:
+        if (
+            e.get("type", {}).get("name") == "Pass"
+            and "pass" in e
+            and "recipient" in e["pass"]
+            and "location" in e
+        ):
+            passer = e["player"]["name"]
+            receiver = e["pass"]["recipient"]["name"]
+            team = e["team"]["name"]
+            data.append({"passer": passer, "receiver": receiver, "team": team})
+
+    df = pd.DataFrame(data)
+    if df.empty:
+        return df
+
+    # Count number of passes from each passer to each receiver
+    df = df.groupby(["passer", "receiver", "team"]).size().reset_index(name="count")
+
+    return df
 
 def render_match_simulator(passes, xg_team1, xg_team2, times):
     """Render the match simulator with pitch animation and xG progression."""
