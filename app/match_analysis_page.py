@@ -5,6 +5,7 @@ import json
 import numpy as np
 import plotly.graph_objects as go
 from utils.simulate_utils import load_matches, load_match_events
+from utils.ui_helpers import kpi_card
 from football_stream_processor.config import DATA_DIR
 from components.shot_map import render_shot_map
 from components.player_performace import render_player_performance
@@ -58,27 +59,6 @@ def render_xg_timeline(xg_team1, xg_team2, times, team1_name, team2_name):
     return fig
 
 
-# ---------- KPI Card Styling ----------
-
-def kpi_card(title, value, delta=None, color="#333"):
-    """Return a styled KPI card as HTML for dark theme."""
-    delta_html = f"<span style='font-size:14px;color:#aaa'>{delta}</span>" if delta else ""
-    return f"""
-    <div style="
-        background-color:{color};
-        border-radius:15px;
-        padding:20px;
-        text-align:center;
-        box-shadow:0 0 8px rgba(0,0,0,0.4);
-        color:white;
-        font-family:sans-serif;
-        min-width:150px;
-    ">
-        <div style="font-size:16px; opacity:0.8;">{title}</div>
-        <div style="font-size:32px; font-weight:bold;">{value}</div>
-        {delta_html}
-    </div>
-    """
 
 
 # ---------- Page ----------
