@@ -15,6 +15,8 @@ jupyter = "^1.1.1"
 kiwisolver = ">=1.4.8,<2.0.0"
 matplotlib = ">=3.10.3,<4.0.0"
 mlflow = "^3.1.1"
+mplsoccer = "^1.5.1"
+networkx = "^3.5"
 numpy = ">=1.26.0,<2.0.0"
 optuna = "^4.4.0"
 packaging = ">=25.0,<26.0"
@@ -24,22 +26,30 @@ plotly = "^6.2.0"
 pyparsing = ">=3.2.3,<4.0.0"
 python = ">=3.11,<3.12"
 python-dateutil = ">=2.9.0.post0,<3.0.0"
+pyvis = "^0.3.2"
 scikit-learn = "^1.7.0"
 seaborn = "^0.13.2"
 shap = "^0.48.0"
 six = ">=1.17.0,<2.0.0"
 streamlit = "^1.47.1"
-tqdm = "^4.67.1"
-xgboost = "^3.0.2"
 streamlit-autorefresh = "^1.0.1"
 streamlit-extras = "^0.7.5"
-networkx = "^3.5"
-pyvis = "^0.3.2"
-mplsoccer = "^1.5.1"
+tqdm = "^4.67.1"
+xgboost = "^3.0.2"
 
 [tool.poetry.scripts]
 animate-passes = "football_stream_processor.animate.animate_passes:main"
 train-xg-model = "football_stream_processor.models.xg_model.train:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-cov = "^6.2.1"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q --tb=short"
+python_files = "test_*.py"
+pythonpath = ["src"]
+testpaths = ["tests"]
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
