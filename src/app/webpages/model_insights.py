@@ -18,8 +18,12 @@ def model_insights():
     st.markdown("<h1 style='text-align:center;'>📈 Model Insights</h1>", unsafe_allow_html=True)
 
     # Load MLflow runs
-    st.markdown("<div style='text-align:center;'><em>Fetching all Optuna trials for XGBoost from MLflow...</em></div>", unsafe_allow_html=True)
+    st.markdown(
+            "<p style='text-align:center; font-size:1.3rem; font-style:italic;'>Fetching all Optuna trials for XGBoost from MLflow.</p>",
+            unsafe_allow_html=True
+        )    
     df_runs, best_run = fetch_xgboost_runs()
+    st.markdown("---")
 
     # ---------------------
     # KPI Cards for Best Model (TOP)

@@ -14,7 +14,7 @@ import tempfile
 import streamlit as st
 from pyvis.network import Network
 import streamlit.components.v1 as components
-from utils.simulate_utils import get_pass_network_data
+from app.utils.simulate_utils import get_pass_network_data
 
 
 
