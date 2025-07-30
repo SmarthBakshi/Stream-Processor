@@ -1,21 +1,40 @@
-import streamlit as st
-import pandas as pd
+"""
+Match Analysis page for the ML-powered Football Analytics Dashboard.
+
+This module provides interactive match-level visualizations and KPIs,
+including shot maps, player performance, pass networks, and xG timelines.
+
+Functions
+---------
+- get_match_kpis: Compute key match-level KPIs (total shots, passes, xG, pass accuracy).
+- render_xg_timeline: Plot cumulative xG over time for both teams.
+- match_analysis_page: Renders the match analysis dashboard page.
+"""
+
 import os
 import json
-import numpy as np
+import streamlit as st
 import plotly.graph_objects as go
+
 from utils.simulate_utils import load_matches, load_match_events
 from utils.ui_helpers import kpi_card
+
 from football_stream_processor.config import DATA_DIR
+
 from components.shot_map import render_shot_map
 from components.player_performace import render_player_performance
 from components.pass_network import render_pass_network
 
 
-# ---------- Data Helpers ----------
-
 def get_match_kpis(match_id):
-    """Compute key match-level KPIs (total shots, passes, xG, pass accuracy)."""
+    """
+    Compute key match-level KPIs (total shots, passes, xG, pass accuracy).
+
+    :param match_id: Match identifier.
+    :type match_id: int or str
+    :return: Dictionary of KPIs.
+    :rtype: dict
+    """
     path = os.path.join(DATA_DIR, "events", f"{match_id}.json")
     with open(path, "r") as f:
         events = json.load(f)
@@ -38,7 +57,17 @@ def get_match_kpis(match_id):
 
 
 def render_xg_timeline(xg_team1, xg_team2, times, team1_name, team2_name):
-    """Plot cumulative xG over time for both teams."""
+    """
+    Plot cumulative xG over time for both teams.
+
+    :param xg_team1: List of cumulative xG values for team 1.
+    :param xg_team2: List of cumulative xG values for team 2.
+    :param times: List of time points.
+    :param team1_name: Name of team 1.
+    :param team2_name: Name of team 2.
+    :return: Plotly Figure object.
+    :rtype: plotly.graph_objects.Figure
+    """
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=times, y=xg_team1, name=team1_name,
                              line=dict(color="#1f77b4", width=3)))
@@ -59,11 +88,16 @@ def render_xg_timeline(xg_team1, xg_team2, times, team1_name, team2_name):
     return fig
 
 
-
-
-# ---------- Page ----------
-
 def match_analysis_page():
+    """
+    Render the Match Analysis Dashboard page.
+
+    Displays:
+    - Match KPIs (shots, passes, pass accuracy, xG)
+    - Shot map, player performance, pass network, and xG timeline visualizations
+
+    :return: None
+    """
     # Global Dark Style
     st.markdown(
         """
@@ -110,7 +144,6 @@ def match_analysis_page():
 
     st.markdown("---")
 
-
     # Detailed Analysis Tabs
     tab1, tab2, tab3, tab4 = st.tabs(["Shot Map", "Player Performance", "Pass Network", "xG Timeline"])
     with tab1:
@@ -122,3 +155,4 @@ def match_analysis_page():
     with tab4:
         fig_xg = render_xg_timeline(xg_team1, xg_team2, times, home_team, away_team)
         st.plotly_chart(fig_xg, use_container_width=True)
+    return
