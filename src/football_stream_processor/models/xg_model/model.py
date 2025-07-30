@@ -16,4 +16,5 @@ def get_model(model_name: str = "logistic_regression", **kwargs):
           use_label_encoder=False,
           random_state=42
       )
-    raise ValueError(f"Unsupported model: {model_name}")
+    else:
+      raise ValueError(f"Unsupported model: {model_name}")
