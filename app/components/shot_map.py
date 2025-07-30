@@ -1,3 +1,14 @@
+"""
+Shot Map Visualization for the Football Analytics Dashboard.
+
+This module provides functionality to render a shot map visualization for a given football match.
+The shot map highlights shot locations, xG values, and outcomes using Matplotlib and Streamlit.
+
+Functions
+---------
+- render_shot_map: Render a shot map visualization for a given match ID.
+"""
+
 import os
 import json
 import pandas as pd
@@ -9,10 +20,21 @@ import matplotlib.patches as mpatches
 
 
 def render_shot_map(match_id):
+    """
+    Render a shot map visualization for a given match ID.
+
+    The shot map displays shot locations, xG values (circle size), and outcomes (circle color).
+    It uses Matplotlib and mplsoccer to draw the pitch and shots.
+
+    :param match_id: Match identifier.
+    :type match_id: int or str
+    :return: None
+    """
     path = os.path.join(DATA_DIR, "events", f"{match_id}.json")
     with open(path, "r") as f:
         events = json.load(f)
 
+    # Extract shot events
     shots = []
     for e in events:
         if e.get("type", {}).get("name") == "Shot" and "location" in e:
@@ -31,6 +53,7 @@ def render_shot_map(match_id):
 
     df = pd.DataFrame(shots)
 
+    # Define colors for shot outcomes
     outcome_colors = {
         "Goal": "#d62728",      # red
         "Off T": "#ff7f0e",     # orange
@@ -54,6 +77,7 @@ def render_shot_map(match_id):
     fig.patch.set_facecolor('#111')   # Match background to pitch color
     ax.set_facecolor('#111')          # Ensure axis area matches pitch
 
+    # Plot shots
     pitch.scatter(
         df["x"], df["y"],
         s=df["xg"] * 1800,  # Slightly reduced size
@@ -67,7 +91,7 @@ def render_shot_map(match_id):
 
     ax.set_title("Shot Map (circle size = xG)", color='white', fontsize=14, pad=15)
 
-    # Legend below
+    # Add legend
     handles = [
         mpatches.Patch(color=color, label=label)
         for label, color in outcome_colors.items()
@@ -80,12 +104,13 @@ def render_shot_map(match_id):
         frameon=False,
         fontsize=6,
         labelcolor='white',
-        
         bbox_to_anchor=(0.5, -0.07)
     )
 
-    st.pyplot(fig, use_container_width=True)  # Responsive to screen size
+    # Render the figure in Streamlit
+    st.pyplot(fig, use_container_width=True)
 
+    # Add description below the plot
     st.markdown(
         "<div style='text-align:center; color:#ddd; font-size:16px; margin-top:10px;'>"
         "Each circle represents a shot. Color = shot outcome."

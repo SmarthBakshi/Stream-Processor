@@ -1,15 +1,36 @@
+"""
+Player Performance Visualization for the Football Analytics Dashboard.
+
+This module provides functionality to render player-specific performance metrics
+and visualizations, including touch heatmaps and shot maps, using Streamlit and Matplotlib.
+
+Functions
+---------
+- plot_touch_heatmap_mpl: Generate a touch heatmap for a player using Matplotlib.
+- plot_shot_map_mpl: Generate a shot map (xG-weighted) for a player using Matplotlib.
+- render_player_performance: Render player performance metrics and visualizations for a given match ID.
+"""
+
 import os
 import json
 import pandas as pd
-import numpy as np
 import streamlit as st
-import matplotlib.pyplot as plt
 from mplsoccer import Pitch
+import matplotlib.pyplot as plt
 from football_stream_processor.config import DATA_DIR
 
 
 def plot_touch_heatmap_mpl(df_touches, player_name):
+    """
+    Generate a touch heatmap for a player using Matplotlib.
 
+    :param df_touches: DataFrame containing touch locations with columns ['x', 'y'].
+    :type df_touches: pd.DataFrame
+    :param player_name: Name of the player.
+    :type player_name: str
+    :return: Matplotlib figure object for the heatmap.
+    :rtype: matplotlib.figure.Figure
+    """
     fig, ax = plt.subplots(figsize=(8, 6))
     fig.patch.set_facecolor('#111')   # Match background to pitch color
     ax.set_facecolor('#111')          # Ensure axis area matches pitch
@@ -41,6 +62,16 @@ def plot_touch_heatmap_mpl(df_touches, player_name):
 
 
 def plot_shot_map_mpl(df_shots, player_name):
+    """
+    Generate a shot map (xG-weighted) for a player using Matplotlib.
+
+    :param df_shots: DataFrame containing shot locations and xG values with columns ['x', 'y', 'xg'].
+    :type df_shots: pd.DataFrame
+    :param player_name: Name of the player.
+    :type player_name: str
+    :return: Matplotlib figure object for the shot map.
+    :rtype: matplotlib.figure.Figure
+    """
     fig, ax = plt.subplots(figsize=(8, 6))
     fig.patch.set_facecolor('#111')   # Match background to pitch color
     ax.set_facecolor('#111')          # Ensure axis area matches pitch
@@ -55,6 +86,17 @@ def plot_shot_map_mpl(df_shots, player_name):
 
 
 def render_player_performance(match_id):
+    """
+    Render player performance metrics and visualizations for a given match ID.
+
+    Displays:
+    - Key performance indicators (KPIs) such as pass accuracy, total shots, and xG.
+    - Touch heatmap and shot map visualizations.
+
+    :param match_id: Match identifier.
+    :type match_id: int or str
+    :return: None
+    """
     path = os.path.join(DATA_DIR, "events", f"{match_id}.json")
     with open(path, "r") as f:
         events = json.load(f)
@@ -121,6 +163,5 @@ def render_player_performance(match_id):
                 f"Each dot shows a shot by {selected_player}. Size and color reflect xG (expected goal probability)."
                 f"</div>", unsafe_allow_html=True
             )
-
         else:
             st.info(f"No shots found for {selected_player}.")

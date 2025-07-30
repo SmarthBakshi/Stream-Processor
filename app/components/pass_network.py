@@ -1,12 +1,36 @@
+"""
+Pass Network Visualization for the Football Analytics Dashboard.
+
+This module provides functionality to render a pass network visualization
+using PyVis for a given football match. The pass network highlights the
+connections between players based on pass frequency.
+
+Functions
+---------
+- render_pass_network: Render a pass network visualization for a given match ID.
+"""
+
+import tempfile
+import streamlit as st
 from pyvis.network import Network
 import streamlit.components.v1 as components
-import streamlit as st
-import pandas as pd
 from utils.simulate_utils import get_pass_network_data
-import tempfile
+
 
 
 def render_pass_network(match_id):
+    """
+    Render a pass network visualization for a given match ID.
+
+    The pass network is built using PyVis and displayed in Streamlit. It shows
+    players as nodes and passes between them as edges. Nodes are sized based
+    on the total number of passes involving the player, and edges are weighted
+    by the frequency of passes between players.
+
+    :param match_id: Match identifier.
+    :type match_id: int or str
+    :return: None
+    """
     df = get_pass_network_data(match_id)
 
     if df.empty:
