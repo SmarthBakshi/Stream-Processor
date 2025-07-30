@@ -6,15 +6,16 @@ import pandas as pd
 from joblib import dump, load
 from mlflow.tracking import MlflowClient
 
-from model import get_model
-from utils import save_model
+from football_stream_processor.models.xg_model.model import get_model
+from football_stream_processor.models.xg_model.utils import save_model
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_auc_score
 
-from data_preparation import load_and_prepare_data
+from football_stream_processor.models.xg_model.data_preparation import load_and_prepare_data
+
 from football_stream_processor.config import (
     MODEL_NAME,
     MODEL_SAVE_PATH,
@@ -22,7 +23,7 @@ from football_stream_processor.config import (
     MLFLOW_TRACKING_URI,
     MLFLOW_REGISTRY_URI
 )
-from evaluation import print_classification_report, print_roc_auc, plot_confusion_matrix
+from football_stream_processor.models.xg_model.evaluation import print_classification_report, print_roc_auc, plot_confusion_matrix
 
 
 def create_preprocessor():

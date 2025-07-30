@@ -1,5 +1,6 @@
 
 import json
+import sys
 from collections import defaultdict
 
 def analyze_match_metrics(json_path):
@@ -67,7 +68,7 @@ def analyze_match_metrics(json_path):
     return summary_metrics
 
 if __name__ == "__main__":
-    import sys
+
     if len(sys.argv) < 2:
         print("Usage: python match_summary.py <path_to_json>")
     else:
