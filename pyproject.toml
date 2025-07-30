@@ -31,6 +31,11 @@ six = ">=1.17.0,<2.0.0"
 streamlit = "^1.47.1"
 tqdm = "^4.67.1"
 xgboost = "^3.0.2"
+streamlit-autorefresh = "^1.0.1"
+streamlit-extras = "^0.7.5"
+networkx = "^3.5"
+pyvis = "^0.3.2"
+mplsoccer = "^1.5.1"
 
 [tool.poetry.scripts]
 animate-passes = "football_stream_processor.animate.animate_passes:main"

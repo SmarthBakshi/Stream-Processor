@@ -1,0 +1,4316 @@
+[ {
+  "match_id" : 3795108,
+  "match_date" : "2021-07-02",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 773,
+    "home_team_name" : "Switzerland",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "managers" : [ {
+      "id" : 492,
+      "name" : "Vladimir Petković",
+      "nickname" : null,
+      "dob" : "1963-08-15",
+      "country" : {
+        "id" : 28,
+        "name" : "Bosnia and Herzegovina"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 772,
+    "away_team_name" : "Spain",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 793,
+      "name" : "Luis Enrique Martínez García",
+      "nickname" : "Luis Enrique",
+      "dob" : "1970-05-08",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:35:19.064845",
+  "last_updated_360" : "2023-04-27T21:55:08.695971",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 5,
+  "competition_stage" : {
+    "id" : 11,
+    "name" : "Quarter-finals"
+  },
+  "stadium" : {
+    "id" : 4726,
+    "name" : "Saint-Petersburg Stadium",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  },
+  "referee" : {
+    "id" : 1,
+    "name" : "Michael Oliver",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3788769,
+  "match_date" : "2021-06-21",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 796,
+    "home_team_name" : "Russia",
+    "home_team_gender" : "male",
+    "home_team_group" : "B",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    },
+    "managers" : [ {
+      "id" : 365,
+      "name" : "Stanislav Cherchesov",
+      "nickname" : null,
+      "dob" : "1963-09-02",
+      "country" : {
+        "id" : 188,
+        "name" : "Russia"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 776,
+    "away_team_name" : "Denmark",
+    "away_team_gender" : "male",
+    "away_team_group" : "B",
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    },
+    "managers" : [ {
+      "id" : 255,
+      "name" : "Kasper Hjulmand",
+      "nickname" : null,
+      "dob" : "1972-04-09",
+      "country" : {
+        "id" : 61,
+        "name" : "Denmark"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 4,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:23:46.374386",
+  "last_updated_360" : "2023-04-27T22:20:21.686564",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 495,
+    "name" : "Parken",
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    }
+  },
+  "referee" : {
+    "id" : 76,
+    "name" : "Clément Turpin",
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    }
+  }
+}, {
+  "match_id" : 3788766,
+  "match_date" : "2021-06-20",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 914,
+    "home_team_name" : "Italy",
+    "home_team_gender" : "male",
+    "home_team_group" : "A",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 2997,
+      "name" : "Roberto Mancini",
+      "nickname" : null,
+      "dob" : "1964-11-27",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 907,
+    "away_team_name" : "Wales",
+    "away_team_gender" : "male",
+    "away_team_group" : "A",
+    "country" : {
+      "id" : 249,
+      "name" : "Wales"
+    },
+    "managers" : [ {
+      "id" : 1000471,
+      "name" : "Robert Page",
+      "nickname" : null,
+      "dob" : "1974-09-03",
+      "country" : {
+        "id" : 249,
+        "name" : "Wales"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:20:49.842595",
+  "last_updated_360" : "2023-04-27T22:22:42.769375",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 381,
+    "name" : "Estadio Olímpico",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 448,
+    "name" : "Ovidiu Alin Hațegan",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  }
+}, {
+  "match_id" : 3795220,
+  "match_date" : "2021-07-06",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 914,
+    "home_team_name" : "Italy",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 2997,
+      "name" : "Roberto Mancini",
+      "nickname" : null,
+      "dob" : "1964-11-27",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 772,
+    "away_team_name" : "Spain",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 793,
+      "name" : "Luis Enrique Martínez García",
+      "nickname" : "Luis Enrique",
+      "dob" : "1970-05-08",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-08-09T20:41:31.241",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 6,
+  "competition_stage" : {
+    "id" : 15,
+    "name" : "Semi-finals"
+  },
+  "stadium" : {
+    "id" : 4666,
+    "name" : "Wembley Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 186,
+    "name" : "Felix Brych",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  }
+}, {
+  "match_id" : 3788761,
+  "match_date" : "2021-06-18",
+  "kick_off" : "15:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 790,
+    "home_team_name" : "Sweden",
+    "home_team_gender" : "male",
+    "home_team_group" : "E",
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "managers" : [ {
+      "id" : 549,
+      "name" : "Jan Olof Andersson",
+      "nickname" : null,
+      "dob" : "1962-09-29",
+      "country" : {
+        "id" : 220,
+        "name" : "Sweden"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 908,
+    "away_team_name" : "Slovakia",
+    "away_team_gender" : "male",
+    "away_team_group" : "E",
+    "country" : {
+      "id" : 207,
+      "name" : "Slovakia"
+    },
+    "managers" : [ {
+      "id" : 5363,
+      "name" : "Štefan Tarkovič",
+      "nickname" : null,
+      "dob" : "1973-02-18",
+      "country" : {
+        "id" : 207,
+        "name" : "Slovakia"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:17:56.014053",
+  "last_updated_360" : "2023-04-27T22:28:52.986485",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4726,
+    "name" : "Saint-Petersburg Stadium",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  },
+  "referee" : {
+    "id" : 225,
+    "name" : "Daniel Siebert",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  }
+}, {
+  "match_id" : 3788764,
+  "match_date" : "2021-06-19",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 780,
+    "home_team_name" : "Portugal",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group F",
+    "country" : {
+      "id" : 183,
+      "name" : "Portugal"
+    },
+    "managers" : [ {
+      "id" : 607,
+      "name" : "Fernando Manuel Fernandes da Costa Santos",
+      "nickname" : "Fernando Santos",
+      "dob" : "1954-10-10",
+      "country" : {
+        "id" : 183,
+        "name" : "Portugal"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 770,
+    "away_team_name" : "Germany",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group F",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "managers" : [ {
+      "id" : 602,
+      "name" : "Joachim Löw",
+      "nickname" : null,
+      "dob" : "1960-02-03",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 4,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-06-20T13:10:40.911",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4867,
+    "name" : "Allianz Arena",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  },
+  "referee" : {
+    "id" : 8,
+    "name" : "Anthony Taylor",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3788773,
+  "match_date" : "2021-06-23",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 780,
+    "home_team_name" : "Portugal",
+    "home_team_gender" : "male",
+    "home_team_group" : "F",
+    "country" : {
+      "id" : 183,
+      "name" : "Portugal"
+    },
+    "managers" : [ {
+      "id" : 607,
+      "name" : "Fernando Manuel Fernandes da Costa Santos",
+      "nickname" : "Fernando Santos",
+      "dob" : "1954-10-10",
+      "country" : {
+        "id" : 183,
+        "name" : "Portugal"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 771,
+    "away_team_name" : "France",
+    "away_team_gender" : "male",
+    "away_team_group" : "F",
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    },
+    "managers" : [ {
+      "id" : 545,
+      "name" : "Didier Deschamps",
+      "nickname" : null,
+      "dob" : "1968-10-15",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:26:29.587394",
+  "last_updated_360" : "2023-04-27T22:17:28.967888",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 116551,
+    "name" : "Puskás Aréna",
+    "country" : {
+      "id" : 103,
+      "name" : "Hungary"
+    }
+  },
+  "referee" : {
+    "id" : 180,
+    "name" : "Antonio Miguel Mateu Lahoz",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
+  "match_id" : 3788755,
+  "match_date" : "2021-06-16",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 909,
+    "home_team_name" : "Turkey",
+    "home_team_gender" : "male",
+    "home_team_group" : "A",
+    "country" : {
+      "id" : 233,
+      "name" : "Turkey"
+    },
+    "managers" : [ {
+      "id" : 701,
+      "name" : "Şenol Güneş",
+      "nickname" : null,
+      "dob" : "1952-06-01",
+      "country" : {
+        "id" : 233,
+        "name" : "Turkey"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 907,
+    "away_team_name" : "Wales",
+    "away_team_gender" : "male",
+    "away_team_group" : "A",
+    "country" : {
+      "id" : 249,
+      "name" : "Wales"
+    },
+    "managers" : [ {
+      "id" : 1000471,
+      "name" : "Robert Page",
+      "nickname" : null,
+      "dob" : "1974-09-03",
+      "country" : {
+        "id" : 249,
+        "name" : "Wales"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:13:45.430143",
+  "last_updated_360" : "2023-04-27T22:32:47.982590",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4549,
+    "name" : "Bakı Olimpiya Stadionu",
+    "country" : {
+      "id" : 16,
+      "name" : "Azerbaijan"
+    }
+  },
+  "referee" : {
+    "id" : 2445,
+    "name" : "Artur Manuel Ribeiro Soares Dias",
+    "country" : {
+      "id" : 183,
+      "name" : "Portugal"
+    }
+  }
+}, {
+  "match_id" : 3788754,
+  "match_date" : "2021-06-16",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 914,
+    "home_team_name" : "Italy",
+    "home_team_gender" : "male",
+    "home_team_group" : "A",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 2997,
+      "name" : "Roberto Mancini",
+      "nickname" : null,
+      "dob" : "1964-11-27",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 773,
+    "away_team_name" : "Switzerland",
+    "away_team_gender" : "male",
+    "away_team_group" : "A",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "managers" : [ {
+      "id" : 492,
+      "name" : "Vladimir Petković",
+      "nickname" : null,
+      "dob" : "1963-08-15",
+      "country" : {
+        "id" : 28,
+        "name" : "Bosnia and Herzegovina"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:14:48.865959",
+  "last_updated_360" : "2023-04-27T22:33:19.992088",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 381,
+    "name" : "Estadio Olímpico",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 725,
+    "name" : "Sergey Karasev",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  }
+}, {
+  "match_id" : 3788762,
+  "match_date" : "2021-06-19",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 772,
+    "home_team_name" : "Spain",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group E",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 793,
+      "name" : "Luis Enrique Martínez García",
+      "nickname" : "Luis Enrique",
+      "dob" : "1970-05-08",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 789,
+    "away_team_name" : "Poland",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group E",
+    "country" : {
+      "id" : 182,
+      "name" : "Poland"
+    },
+    "managers" : [ {
+      "id" : 1798,
+      "name" : "Paulo Manuel Carvalho de Sousa",
+      "nickname" : "Paulo Sousa",
+      "dob" : "1970-08-30",
+      "country" : {
+        "id" : 183,
+        "name" : "Portugal"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-09-06T18:23:20.676161",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 117374,
+    "name" : "Estadio de La Cartuja",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  },
+  "referee" : {
+    "id" : 269,
+    "name" : "Daniele Orsato",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3788760,
+  "match_date" : "2021-06-18",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 785,
+    "home_team_name" : "Croatia",
+    "home_team_gender" : "male",
+    "home_team_group" : "D",
+    "country" : {
+      "id" : 56,
+      "name" : "Croatia"
+    },
+    "managers" : [ {
+      "id" : 307,
+      "name" : "Zlatko Dalić",
+      "nickname" : null,
+      "dob" : "1966-10-26",
+      "country" : {
+        "id" : 56,
+        "name" : "Croatia"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 912,
+    "away_team_name" : "Czech Republic",
+    "away_team_gender" : "male",
+    "away_team_group" : "D",
+    "country" : {
+      "id" : 60,
+      "name" : "Czech Republic"
+    },
+    "managers" : [ {
+      "id" : 183,
+      "name" : "Jaroslav Šilhavý",
+      "nickname" : null,
+      "dob" : "1961-11-03",
+      "country" : {
+        "id" : 60,
+        "name" : "Czech Republic"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:17:02.215616",
+  "last_updated_360" : "2023-04-27T22:27:56.115314",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 52986,
+    "name" : "Hampden Park",
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    }
+  },
+  "referee" : {
+    "id" : 2728,
+    "name" : "Carlos del Cerro Grande",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
+  "match_id" : 3788747,
+  "match_date" : "2021-06-13",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 915,
+    "home_team_name" : "Austria",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group C",
+    "country" : {
+      "id" : 15,
+      "name" : "Austria"
+    },
+    "managers" : [ {
+      "id" : 4061,
+      "name" : "Franco Foda",
+      "nickname" : null,
+      "dob" : "1966-04-23",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 2358,
+    "away_team_name" : "North Macedonia",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group C",
+    "country" : {
+      "id" : 135,
+      "name" : "Macedonia, Republic of"
+    },
+    "managers" : [ {
+      "id" : 4172,
+      "name" : "Igor Angelovski",
+      "nickname" : null,
+      "dob" : "1976-06-02",
+      "country" : {
+        "id" : 135,
+        "name" : "Macedonia, Republic of"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-07-07T13:09:42.891",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4365,
+    "name" : "Arena Naţională",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  },
+  "referee" : {
+    "id" : 591,
+    "name" : "Lars Christian Andreas Ekberg",
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    }
+  }
+}, {
+  "match_id" : 3788741,
+  "match_date" : "2021-06-11",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 909,
+    "home_team_name" : "Turkey",
+    "home_team_gender" : "male",
+    "home_team_group" : "A",
+    "country" : {
+      "id" : 233,
+      "name" : "Turkey"
+    },
+    "managers" : [ {
+      "id" : 701,
+      "name" : "Şenol Güneş",
+      "nickname" : null,
+      "dob" : "1952-06-01",
+      "country" : {
+        "id" : 233,
+        "name" : "Turkey"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 914,
+    "away_team_name" : "Italy",
+    "away_team_gender" : "male",
+    "away_team_group" : "A",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 2997,
+      "name" : "Roberto Mancini",
+      "nickname" : null,
+      "dob" : "1964-11-27",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 3,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:06:42.263441",
+  "last_updated_360" : "2023-04-27T22:38:34.970148",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 381,
+    "name" : "Estadio Olímpico",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 293,
+    "name" : "Danny Desmond Makkelie",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  }
+}, {
+  "match_id" : 3795109,
+  "match_date" : "2021-07-03",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 912,
+    "home_team_name" : "Czech Republic",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 60,
+      "name" : "Czech Republic"
+    },
+    "managers" : [ {
+      "id" : 183,
+      "name" : "Jaroslav Šilhavý",
+      "nickname" : null,
+      "dob" : "1961-11-03",
+      "country" : {
+        "id" : 60,
+        "name" : "Czech Republic"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 776,
+    "away_team_name" : "Denmark",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    },
+    "managers" : [ {
+      "id" : 255,
+      "name" : "Kasper Hjulmand",
+      "nickname" : null,
+      "dob" : "1972-04-09",
+      "country" : {
+        "id" : 61,
+        "name" : "Denmark"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-07-04T13:05:32.832",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 5,
+  "competition_stage" : {
+    "id" : 11,
+    "name" : "Quarter-finals"
+  },
+  "stadium" : {
+    "id" : 4549,
+    "name" : "Bakı Olimpiya Stadionu",
+    "country" : {
+      "id" : 16,
+      "name" : "Azerbaijan"
+    }
+  },
+  "referee" : {
+    "id" : 287,
+    "name" : "Björn Kuipers",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  }
+}, {
+  "match_id" : 3795187,
+  "match_date" : "2021-07-03",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 911,
+    "home_team_name" : "Ukraine",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 238,
+      "name" : "Ukraine"
+    },
+    "managers" : [ {
+      "id" : 2303,
+      "name" : "Andrii Shevchenko",
+      "nickname" : null,
+      "dob" : "1976-09-29",
+      "country" : {
+        "id" : 238,
+        "name" : "Ukraine"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 768,
+    "away_team_name" : "England",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 277,
+      "name" : "Gareth Southgate",
+      "nickname" : null,
+      "dob" : "1970-09-03",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 4,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:36:28.219097",
+  "last_updated_360" : "2023-04-27T21:52:12.041820",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 5,
+  "competition_stage" : {
+    "id" : 11,
+    "name" : "Quarter-finals"
+  },
+  "stadium" : {
+    "id" : 381,
+    "name" : "Estadio Olímpico",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  },
+  "referee" : {
+    "id" : 186,
+    "name" : "Felix Brych",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  }
+}, {
+  "match_id" : 3788770,
+  "match_date" : "2021-06-21",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 2358,
+    "home_team_name" : "North Macedonia",
+    "home_team_gender" : "male",
+    "home_team_group" : "C",
+    "country" : {
+      "id" : 135,
+      "name" : "Macedonia, Republic of"
+    },
+    "managers" : [ {
+      "id" : 4172,
+      "name" : "Igor Angelovski",
+      "nickname" : null,
+      "dob" : "1976-06-02",
+      "country" : {
+        "id" : 135,
+        "name" : "Macedonia, Republic of"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 941,
+    "away_team_name" : "Netherlands",
+    "away_team_gender" : "male",
+    "away_team_group" : "C",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "managers" : [ {
+      "id" : 686,
+      "name" : "Frank de Boer",
+      "nickname" : null,
+      "dob" : "1970-05-15",
+      "country" : {
+        "id" : 160,
+        "name" : "Netherlands"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 3,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:22:58.255877",
+  "last_updated_360" : "2023-04-27T22:21:33.337959",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4815,
+    "name" : "Johan Cruijff Arena (Amsterdam)",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  },
+  "referee" : {
+    "id" : 583,
+    "name" : "Istvan Kovacs",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  }
+}, {
+  "match_id" : 3795506,
+  "match_date" : "2021-07-11",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 914,
+    "home_team_name" : "Italy",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 2997,
+      "name" : "Roberto Mancini",
+      "nickname" : null,
+      "dob" : "1964-11-27",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 768,
+    "away_team_name" : "England",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 277,
+      "name" : "Gareth Southgate",
+      "nickname" : null,
+      "dob" : "1970-09-03",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-07-12T12:27:50.647",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 7,
+  "competition_stage" : {
+    "id" : 26,
+    "name" : "Final"
+  },
+  "stadium" : {
+    "id" : 4666,
+    "name" : "Wembley Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 287,
+    "name" : "Björn Kuipers",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  }
+}, {
+  "match_id" : 3794688,
+  "match_date" : "2021-06-29",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 768,
+    "home_team_name" : "England",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 277,
+      "name" : "Gareth Southgate",
+      "nickname" : null,
+      "dob" : "1970-09-03",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 770,
+    "away_team_name" : "Germany",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "managers" : [ {
+      "id" : 602,
+      "name" : "Joachim Löw",
+      "nickname" : null,
+      "dob" : "1960-02-03",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:33:31.807173",
+  "last_updated_360" : "2023-04-27T21:59:49.305159",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 4,
+  "competition_stage" : {
+    "id" : 33,
+    "name" : "Round of 16"
+  },
+  "stadium" : {
+    "id" : 4666,
+    "name" : "Wembley Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 293,
+    "name" : "Danny Desmond Makkelie",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  }
+}, {
+  "match_id" : 3794692,
+  "match_date" : "2021-06-29",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 790,
+    "home_team_name" : "Sweden",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "managers" : [ {
+      "id" : 549,
+      "name" : "Jan Olof Andersson",
+      "nickname" : null,
+      "dob" : "1962-09-29",
+      "country" : {
+        "id" : 220,
+        "name" : "Sweden"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 911,
+    "away_team_name" : "Ukraine",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 238,
+      "name" : "Ukraine"
+    },
+    "managers" : [ {
+      "id" : 2303,
+      "name" : "Andrii Shevchenko",
+      "nickname" : null,
+      "dob" : "1976-09-29",
+      "country" : {
+        "id" : 238,
+        "name" : "Ukraine"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-10-09T14:22:25.560075",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 4,
+  "competition_stage" : {
+    "id" : 33,
+    "name" : "Round of 16"
+  },
+  "stadium" : {
+    "id" : 52986,
+    "name" : "Hampden Park",
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    }
+  },
+  "referee" : {
+    "id" : 269,
+    "name" : "Daniele Orsato",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3794686,
+  "match_date" : "2021-06-28",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 785,
+    "home_team_name" : "Croatia",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 56,
+      "name" : "Croatia"
+    },
+    "managers" : [ {
+      "id" : 307,
+      "name" : "Zlatko Dalić",
+      "nickname" : null,
+      "dob" : "1966-10-26",
+      "country" : {
+        "id" : 56,
+        "name" : "Croatia"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 772,
+    "away_team_name" : "Spain",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 793,
+      "name" : "Luis Enrique Martínez García",
+      "nickname" : "Luis Enrique",
+      "dob" : "1970-05-08",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 5,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:32:37.050718",
+  "last_updated_360" : "2023-04-27T22:02:01.805791",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 4,
+  "competition_stage" : {
+    "id" : 33,
+    "name" : "Round of 16"
+  },
+  "stadium" : {
+    "id" : 495,
+    "name" : "Parken",
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    }
+  },
+  "referee" : {
+    "id" : 581,
+    "name" : "Cüneyt Çakιr",
+    "country" : {
+      "id" : 233,
+      "name" : "Turkey"
+    }
+  }
+}, {
+  "match_id" : 3794687,
+  "match_date" : "2021-06-27",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 782,
+    "home_team_name" : "Belgium",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "managers" : [ {
+      "id" : 263,
+      "name" : "Roberto Martínez Montoliú",
+      "nickname" : "Roberto Martínez",
+      "dob" : "1973-07-13",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 780,
+    "away_team_name" : "Portugal",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 183,
+      "name" : "Portugal"
+    },
+    "managers" : [ {
+      "id" : 607,
+      "name" : "Fernando Manuel Fernandes da Costa Santos",
+      "nickname" : "Fernando Santos",
+      "dob" : "1954-10-10",
+      "country" : {
+        "id" : 183,
+        "name" : "Portugal"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:30:20.431849",
+  "last_updated_360" : "2023-04-27T22:05:23.624996",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 4,
+  "competition_stage" : {
+    "id" : 33,
+    "name" : "Round of 16"
+  },
+  "stadium" : {
+    "id" : 117374,
+    "name" : "Estadio de La Cartuja",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  },
+  "referee" : {
+    "id" : 186,
+    "name" : "Felix Brych",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  }
+}, {
+  "match_id" : 3794685,
+  "match_date" : "2021-06-26",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 914,
+    "home_team_name" : "Italy",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 2997,
+      "name" : "Roberto Mancini",
+      "nickname" : null,
+      "dob" : "1964-11-27",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 915,
+    "away_team_name" : "Austria",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 15,
+      "name" : "Austria"
+    },
+    "managers" : [ {
+      "id" : 4061,
+      "name" : "Franco Foda",
+      "nickname" : null,
+      "dob" : "1966-04-23",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:28:34.732612",
+  "last_updated_360" : "2023-04-27T22:07:23.951045",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 4,
+  "competition_stage" : {
+    "id" : 33,
+    "name" : "Round of 16"
+  },
+  "stadium" : {
+    "id" : 4666,
+    "name" : "Wembley Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 8,
+    "name" : "Anthony Taylor",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3788774,
+  "match_date" : "2021-06-23",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 770,
+    "home_team_name" : "Germany",
+    "home_team_gender" : "male",
+    "home_team_group" : "F",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "managers" : [ {
+      "id" : 602,
+      "name" : "Joachim Löw",
+      "nickname" : null,
+      "dob" : "1960-02-03",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 916,
+    "away_team_name" : "Hungary",
+    "away_team_gender" : "male",
+    "away_team_group" : "F",
+    "country" : {
+      "id" : 103,
+      "name" : "Hungary"
+    },
+    "managers" : [ {
+      "id" : 3616,
+      "name" : "Marco Rossi",
+      "nickname" : null,
+      "dob" : "1964-09-09",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:27:21.961616",
+  "last_updated_360" : "2023-04-27T22:12:04.115968",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4867,
+    "name" : "Allianz Arena",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  },
+  "referee" : {
+    "id" : 725,
+    "name" : "Sergey Karasev",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  }
+}, {
+  "match_id" : 3788771,
+  "match_date" : "2021-06-22",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 785,
+    "home_team_name" : "Croatia",
+    "home_team_gender" : "male",
+    "home_team_group" : "D",
+    "country" : {
+      "id" : 56,
+      "name" : "Croatia"
+    },
+    "managers" : [ {
+      "id" : 307,
+      "name" : "Zlatko Dalić",
+      "nickname" : null,
+      "dob" : "1966-10-26",
+      "country" : {
+        "id" : 56,
+        "name" : "Croatia"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 942,
+    "away_team_name" : "Scotland",
+    "away_team_gender" : "male",
+    "away_team_group" : "D",
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    },
+    "managers" : [ {
+      "id" : 510,
+      "name" : "Steve Clarke",
+      "nickname" : null,
+      "dob" : "1963-08-29",
+      "country" : {
+        "id" : 201,
+        "name" : "Scotland"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:24:40.775448",
+  "last_updated_360" : "2023-04-27T22:19:15.479272",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 52986,
+    "name" : "Hampden Park",
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    }
+  },
+  "referee" : {
+    "id" : 1121,
+    "name" : "Fernando Andrés Rapallini",
+    "country" : {
+      "id" : 11,
+      "name" : "Argentina"
+    }
+  }
+}, {
+  "match_id" : 3788772,
+  "match_date" : "2021-06-22",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 912,
+    "home_team_name" : "Czech Republic",
+    "home_team_gender" : "male",
+    "home_team_group" : "D",
+    "country" : {
+      "id" : 60,
+      "name" : "Czech Republic"
+    },
+    "managers" : [ {
+      "id" : 183,
+      "name" : "Jaroslav Šilhavý",
+      "nickname" : null,
+      "dob" : "1961-11-03",
+      "country" : {
+        "id" : 60,
+        "name" : "Czech Republic"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 768,
+    "away_team_name" : "England",
+    "away_team_gender" : "male",
+    "away_team_group" : "D",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 277,
+      "name" : "Gareth Southgate",
+      "nickname" : null,
+      "dob" : "1970-09-03",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:25:31.584701",
+  "last_updated_360" : "2023-04-27T22:18:42.584366",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4666,
+    "name" : "Wembley Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 2445,
+    "name" : "Artur Manuel Ribeiro Soares Dias",
+    "country" : {
+      "id" : 183,
+      "name" : "Portugal"
+    }
+  }
+}, {
+  "match_id" : 3788768,
+  "match_date" : "2021-06-21",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 1835,
+    "home_team_name" : "Finland",
+    "home_team_gender" : "male",
+    "home_team_group" : "B",
+    "country" : {
+      "id" : 77,
+      "name" : "Finland"
+    },
+    "managers" : [ {
+      "id" : 3622,
+      "name" : "Markku Kanerva",
+      "nickname" : null,
+      "dob" : "1964-05-24",
+      "country" : {
+        "id" : 77,
+        "name" : "Finland"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 782,
+    "away_team_name" : "Belgium",
+    "away_team_gender" : "male",
+    "away_team_group" : "B",
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "managers" : [ {
+      "id" : 263,
+      "name" : "Roberto Martínez Montoliú",
+      "nickname" : "Roberto Martínez",
+      "dob" : "1973-07-13",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:21:55.331448",
+  "last_updated_360" : "2023-04-27T22:20:53.150236",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4726,
+    "name" : "Saint-Petersburg Stadium",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  },
+  "referee" : {
+    "id" : 186,
+    "name" : "Felix Brych",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  }
+}, {
+  "match_id" : 3788767,
+  "match_date" : "2021-06-21",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 911,
+    "home_team_name" : "Ukraine",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group C",
+    "country" : {
+      "id" : 238,
+      "name" : "Ukraine"
+    },
+    "managers" : [ {
+      "id" : 2303,
+      "name" : "Andrii Shevchenko",
+      "nickname" : null,
+      "dob" : "1976-09-29",
+      "country" : {
+        "id" : 238,
+        "name" : "Ukraine"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 915,
+    "away_team_name" : "Austria",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group C",
+    "country" : {
+      "id" : 15,
+      "name" : "Austria"
+    },
+    "managers" : [ {
+      "id" : 4061,
+      "name" : "Franco Foda",
+      "nickname" : null,
+      "dob" : "1966-04-23",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-06-27T13:34:43.104",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4365,
+    "name" : "Arena Naţională",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  },
+  "referee" : {
+    "id" : 581,
+    "name" : "Cüneyt Çakιr",
+    "country" : {
+      "id" : 233,
+      "name" : "Turkey"
+    }
+  }
+}, {
+  "match_id" : 3788753,
+  "match_date" : "2021-06-16",
+  "kick_off" : "15:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 1835,
+    "home_team_name" : "Finland",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group B",
+    "country" : {
+      "id" : 77,
+      "name" : "Finland"
+    },
+    "managers" : [ {
+      "id" : 3622,
+      "name" : "Markku Kanerva",
+      "nickname" : null,
+      "dob" : "1964-05-24",
+      "country" : {
+        "id" : 77,
+        "name" : "Finland"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 796,
+    "away_team_name" : "Russia",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group B",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    },
+    "managers" : [ {
+      "id" : 365,
+      "name" : "Stanislav Cherchesov",
+      "nickname" : null,
+      "dob" : "1963-09-02",
+      "country" : {
+        "id" : 188,
+        "name" : "Russia"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-11-11T14:00:16.105809",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4726,
+    "name" : "Saint-Petersburg Stadium",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  },
+  "referee" : {
+    "id" : 293,
+    "name" : "Danny Desmond Makkelie",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  }
+}, {
+  "match_id" : 3788765,
+  "match_date" : "2021-06-20",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 773,
+    "home_team_name" : "Switzerland",
+    "home_team_gender" : "male",
+    "home_team_group" : "A",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "managers" : [ {
+      "id" : 492,
+      "name" : "Vladimir Petković",
+      "nickname" : null,
+      "dob" : "1963-08-15",
+      "country" : {
+        "id" : 28,
+        "name" : "Bosnia and Herzegovina"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 909,
+    "away_team_name" : "Turkey",
+    "away_team_gender" : "male",
+    "away_team_group" : "A",
+    "country" : {
+      "id" : 233,
+      "name" : "Turkey"
+    },
+    "managers" : [ {
+      "id" : 701,
+      "name" : "Şenol Güneş",
+      "nickname" : null,
+      "dob" : "1952-06-01",
+      "country" : {
+        "id" : 233,
+        "name" : "Turkey"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:20:01.648364",
+  "last_updated_360" : "2023-04-27T22:23:13.448491",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4549,
+    "name" : "Bakı Olimpiya Stadionu",
+    "country" : {
+      "id" : 16,
+      "name" : "Azerbaijan"
+    }
+  },
+  "referee" : {
+    "id" : 943,
+    "name" : "Slavko Vinčić",
+    "country" : {
+      "id" : 208,
+      "name" : "Slovenia"
+    }
+  }
+}, {
+  "match_id" : 3788763,
+  "match_date" : "2021-06-19",
+  "kick_off" : "15:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 916,
+    "home_team_name" : "Hungary",
+    "home_team_gender" : "male",
+    "home_team_group" : "F",
+    "country" : {
+      "id" : 103,
+      "name" : "Hungary"
+    },
+    "managers" : [ {
+      "id" : 3616,
+      "name" : "Marco Rossi",
+      "nickname" : null,
+      "dob" : "1964-09-09",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 771,
+    "away_team_name" : "France",
+    "away_team_gender" : "male",
+    "away_team_group" : "F",
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    },
+    "managers" : [ {
+      "id" : 545,
+      "name" : "Didier Deschamps",
+      "nickname" : null,
+      "dob" : "1968-10-15",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:18:55.810499",
+  "last_updated_360" : "2023-04-27T22:26:56.253594",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 116551,
+    "name" : "Puskás Aréna",
+    "country" : {
+      "id" : 103,
+      "name" : "Hungary"
+    }
+  },
+  "referee" : {
+    "id" : 1,
+    "name" : "Michael Oliver",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3788759,
+  "match_date" : "2021-06-18",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 768,
+    "home_team_name" : "England",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group D",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 277,
+      "name" : "Gareth Southgate",
+      "nickname" : null,
+      "dob" : "1970-09-03",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 942,
+    "away_team_name" : "Scotland",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group D",
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    },
+    "managers" : [ {
+      "id" : 510,
+      "name" : "Steve Clarke",
+      "nickname" : null,
+      "dob" : "1963-08-29",
+      "country" : {
+        "id" : 201,
+        "name" : "Scotland"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-07-14T12:59:48.602",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4666,
+    "name" : "Wembley Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 180,
+    "name" : "Antonio Miguel Mateu Lahoz",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
+  "match_id" : 3788758,
+  "match_date" : "2021-06-17",
+  "kick_off" : "15:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 911,
+    "home_team_name" : "Ukraine",
+    "home_team_gender" : "male",
+    "home_team_group" : "C",
+    "country" : {
+      "id" : 238,
+      "name" : "Ukraine"
+    },
+    "managers" : [ {
+      "id" : 2303,
+      "name" : "Andrii Shevchenko",
+      "nickname" : null,
+      "dob" : "1976-09-29",
+      "country" : {
+        "id" : 238,
+        "name" : "Ukraine"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 2358,
+    "away_team_name" : "North Macedonia",
+    "away_team_gender" : "male",
+    "away_team_group" : "C",
+    "country" : {
+      "id" : 135,
+      "name" : "Macedonia, Republic of"
+    },
+    "managers" : [ {
+      "id" : 4172,
+      "name" : "Igor Angelovski",
+      "nickname" : null,
+      "dob" : "1976-06-02",
+      "country" : {
+        "id" : 135,
+        "name" : "Macedonia, Republic of"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:16:10.998685",
+  "last_updated_360" : "2023-04-27T22:30:05.293697",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4365,
+    "name" : "Arena Naţională",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  },
+  "referee" : {
+    "id" : 1121,
+    "name" : "Fernando Andrés Rapallini",
+    "country" : {
+      "id" : 11,
+      "name" : "Argentina"
+    }
+  }
+}, {
+  "match_id" : 3788757,
+  "match_date" : "2021-06-17",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 776,
+    "home_team_name" : "Denmark",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group B",
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    },
+    "managers" : [ {
+      "id" : 255,
+      "name" : "Kasper Hjulmand",
+      "nickname" : null,
+      "dob" : "1972-04-09",
+      "country" : {
+        "id" : 61,
+        "name" : "Denmark"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 782,
+    "away_team_name" : "Belgium",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group B",
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "managers" : [ {
+      "id" : 263,
+      "name" : "Roberto Martínez Montoliú",
+      "nickname" : "Roberto Martínez",
+      "dob" : "1973-07-13",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-07-24T16:17:22.251",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 495,
+    "name" : "Parken",
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    }
+  },
+  "referee" : {
+    "id" : 287,
+    "name" : "Björn Kuipers",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  }
+}, {
+  "match_id" : 3788745,
+  "match_date" : "2021-06-13",
+  "kick_off" : "15:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 768,
+    "home_team_name" : "England",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group D",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 277,
+      "name" : "Gareth Southgate",
+      "nickname" : null,
+      "dob" : "1970-09-03",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 785,
+    "away_team_name" : "Croatia",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group D",
+    "country" : {
+      "id" : 56,
+      "name" : "Croatia"
+    },
+    "managers" : [ {
+      "id" : 307,
+      "name" : "Zlatko Dalić",
+      "nickname" : null,
+      "dob" : "1966-10-26",
+      "country" : {
+        "id" : 56,
+        "name" : "Croatia"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-07-19T16:25:28.955",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4666,
+    "name" : "Wembley Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 269,
+    "name" : "Daniele Orsato",
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    }
+  }
+}, {
+  "match_id" : 3795107,
+  "match_date" : "2021-07-02",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 782,
+    "home_team_name" : "Belgium",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "managers" : [ {
+      "id" : 263,
+      "name" : "Roberto Martínez Montoliú",
+      "nickname" : "Roberto Martínez",
+      "dob" : "1973-07-13",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 914,
+    "away_team_name" : "Italy",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 112,
+      "name" : "Italy"
+    },
+    "managers" : [ {
+      "id" : 2997,
+      "name" : "Roberto Mancini",
+      "nickname" : null,
+      "dob" : "1964-11-27",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:34:30.034957",
+  "last_updated_360" : "2023-04-27T21:54:21.871680",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 5,
+  "competition_stage" : {
+    "id" : 11,
+    "name" : "Quarter-finals"
+  },
+  "stadium" : {
+    "id" : 4867,
+    "name" : "Allianz Arena",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  },
+  "referee" : {
+    "id" : 943,
+    "name" : "Slavko Vinčić",
+    "country" : {
+      "id" : 208,
+      "name" : "Slovenia"
+    }
+  }
+}, {
+  "match_id" : 3795221,
+  "match_date" : "2021-07-07",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 768,
+    "home_team_name" : "England",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    },
+    "managers" : [ {
+      "id" : 277,
+      "name" : "Gareth Southgate",
+      "nickname" : null,
+      "dob" : "1970-09-03",
+      "country" : {
+        "id" : 68,
+        "name" : "England"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 776,
+    "away_team_name" : "Denmark",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    },
+    "managers" : [ {
+      "id" : 255,
+      "name" : "Kasper Hjulmand",
+      "nickname" : null,
+      "dob" : "1972-04-09",
+      "country" : {
+        "id" : 61,
+        "name" : "Denmark"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-07-09T12:38:23.437",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 6,
+  "competition_stage" : {
+    "id" : 15,
+    "name" : "Semi-finals"
+  },
+  "stadium" : {
+    "id" : 4666,
+    "name" : "Wembley Stadium",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  },
+  "referee" : {
+    "id" : 293,
+    "name" : "Danny Desmond Makkelie",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  }
+}, {
+  "match_id" : 3794689,
+  "match_date" : "2021-06-26",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 907,
+    "home_team_name" : "Wales",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 249,
+      "name" : "Wales"
+    }
+  },
+  "away_team" : {
+    "away_team_id" : 776,
+    "away_team_name" : "Denmark",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    }
+  },
+  "home_score" : 0,
+  "away_score" : 4,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-08-10T14:33:01.831",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 4,
+  "competition_stage" : {
+    "id" : 33,
+    "name" : "Round of 16"
+  },
+  "stadium" : {
+    "id" : 4815,
+    "name" : "Johan Cruijff Arena (Amsterdam)",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  },
+  "referee" : {
+    "id" : 225,
+    "name" : "Daniel Siebert",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  }
+}, {
+  "match_id" : 3788746,
+  "match_date" : "2021-06-13",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 941,
+    "home_team_name" : "Netherlands",
+    "home_team_gender" : "male",
+    "home_team_group" : "C",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "managers" : [ {
+      "id" : 686,
+      "name" : "Frank de Boer",
+      "nickname" : null,
+      "dob" : "1970-05-15",
+      "country" : {
+        "id" : 160,
+        "name" : "Netherlands"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 911,
+    "away_team_name" : "Ukraine",
+    "away_team_gender" : "male",
+    "away_team_group" : "C",
+    "country" : {
+      "id" : 238,
+      "name" : "Ukraine"
+    },
+    "managers" : [ {
+      "id" : 2303,
+      "name" : "Andrii Shevchenko",
+      "nickname" : null,
+      "dob" : "1976-09-29",
+      "country" : {
+        "id" : 238,
+        "name" : "Ukraine"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:09:42.196374",
+  "last_updated_360" : "2023-04-27T22:35:45.501625",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4815,
+    "name" : "Johan Cruijff Arena (Amsterdam)",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  },
+  "referee" : {
+    "id" : 186,
+    "name" : "Felix Brych",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  }
+}, {
+  "match_id" : 3794691,
+  "match_date" : "2021-06-28",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 771,
+    "home_team_name" : "France",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    },
+    "managers" : [ {
+      "id" : 545,
+      "name" : "Didier Deschamps",
+      "nickname" : null,
+      "dob" : "1968-10-15",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 773,
+    "away_team_name" : "Switzerland",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "managers" : [ {
+      "id" : 492,
+      "name" : "Vladimir Petković",
+      "nickname" : null,
+      "dob" : "1963-08-15",
+      "country" : {
+        "id" : 28,
+        "name" : "Bosnia and Herzegovina"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 3,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:31:24.633284",
+  "last_updated_360" : "2023-04-27T22:01:06.641175",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 4,
+  "competition_stage" : {
+    "id" : 33,
+    "name" : "Round of 16"
+  },
+  "stadium" : {
+    "id" : 4365,
+    "name" : "Arena Naţională",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  },
+  "referee" : {
+    "id" : 1121,
+    "name" : "Fernando Andrés Rapallini",
+    "country" : {
+      "id" : 11,
+      "name" : "Argentina"
+    }
+  }
+}, {
+  "match_id" : 3794690,
+  "match_date" : "2021-06-27",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 941,
+    "home_team_name" : "Netherlands",
+    "home_team_gender" : "male",
+    "home_team_group" : null,
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "managers" : [ {
+      "id" : 686,
+      "name" : "Frank de Boer",
+      "nickname" : null,
+      "dob" : "1970-05-15",
+      "country" : {
+        "id" : 160,
+        "name" : "Netherlands"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 912,
+    "away_team_name" : "Czech Republic",
+    "away_team_gender" : "male",
+    "away_team_group" : null,
+    "country" : {
+      "id" : 60,
+      "name" : "Czech Republic"
+    },
+    "managers" : [ {
+      "id" : 183,
+      "name" : "Jaroslav Šilhavý",
+      "nickname" : null,
+      "dob" : "1961-11-03",
+      "country" : {
+        "id" : 60,
+        "name" : "Czech Republic"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:29:22.841939",
+  "last_updated_360" : "2023-04-27T22:04:48.944789",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 4,
+  "competition_stage" : {
+    "id" : 33,
+    "name" : "Round of 16"
+  },
+  "stadium" : {
+    "id" : 116551,
+    "name" : "Puskás Aréna",
+    "country" : {
+      "id" : 103,
+      "name" : "Hungary"
+    }
+  },
+  "referee" : {
+    "id" : 725,
+    "name" : "Sergey Karasev",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  }
+}, {
+  "match_id" : 3788756,
+  "match_date" : "2021-06-17",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 941,
+    "home_team_name" : "Netherlands",
+    "home_team_gender" : "male",
+    "home_team_group" : "C",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    },
+    "managers" : [ {
+      "id" : 686,
+      "name" : "Frank de Boer",
+      "nickname" : null,
+      "dob" : "1970-05-15",
+      "country" : {
+        "id" : 160,
+        "name" : "Netherlands"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 915,
+    "away_team_name" : "Austria",
+    "away_team_gender" : "male",
+    "away_team_group" : "C",
+    "country" : {
+      "id" : 15,
+      "name" : "Austria"
+    },
+    "managers" : [ {
+      "id" : 4061,
+      "name" : "Franco Foda",
+      "nickname" : null,
+      "dob" : "1966-04-23",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "home_score" : 2,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:15:51.809902",
+  "last_updated_360" : "2023-04-27T22:31:05.600098",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 2,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4815,
+    "name" : "Johan Cruijff Arena (Amsterdam)",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  },
+  "referee" : {
+    "id" : 2691,
+    "name" : "Orel Grinfeeld",
+    "country" : {
+      "id" : 111,
+      "name" : "Israel"
+    }
+  }
+}, {
+  "match_id" : 3788749,
+  "match_date" : "2021-06-14",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 789,
+    "home_team_name" : "Poland",
+    "home_team_gender" : "male",
+    "home_team_group" : "E",
+    "country" : {
+      "id" : 182,
+      "name" : "Poland"
+    },
+    "managers" : [ {
+      "id" : 1798,
+      "name" : "Paulo Manuel Carvalho de Sousa",
+      "nickname" : "Paulo Sousa",
+      "dob" : "1970-08-30",
+      "country" : {
+        "id" : 183,
+        "name" : "Portugal"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 908,
+    "away_team_name" : "Slovakia",
+    "away_team_gender" : "male",
+    "away_team_group" : "E",
+    "country" : {
+      "id" : 207,
+      "name" : "Slovakia"
+    },
+    "managers" : [ {
+      "id" : 5363,
+      "name" : "Štefan Tarkovič",
+      "nickname" : null,
+      "dob" : "1973-02-18",
+      "country" : {
+        "id" : 207,
+        "name" : "Slovakia"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:11:41.934071",
+  "last_updated_360" : "2023-04-27T22:35:08.658562",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4726,
+    "name" : "Saint-Petersburg Stadium",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  },
+  "referee" : {
+    "id" : 448,
+    "name" : "Ovidiu Alin Hațegan",
+    "country" : {
+      "id" : 187,
+      "name" : "Romania"
+    }
+  }
+}, {
+  "match_id" : 3788750,
+  "match_date" : "2021-06-14",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 772,
+    "home_team_name" : "Spain",
+    "home_team_gender" : "male",
+    "home_team_group" : "E",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 793,
+      "name" : "Luis Enrique Martínez García",
+      "nickname" : "Luis Enrique",
+      "dob" : "1970-05-08",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 790,
+    "away_team_name" : "Sweden",
+    "away_team_gender" : "male",
+    "away_team_group" : "E",
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "managers" : [ {
+      "id" : 549,
+      "name" : "Jan Olof Andersson",
+      "nickname" : null,
+      "dob" : "1962-09-29",
+      "country" : {
+        "id" : 220,
+        "name" : "Sweden"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:10:41.361390",
+  "last_updated_360" : "2023-04-27T22:34:30.589309",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 117374,
+    "name" : "Estadio de La Cartuja",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  },
+  "referee" : {
+    "id" : 943,
+    "name" : "Slavko Vinčić",
+    "country" : {
+      "id" : 208,
+      "name" : "Slovenia"
+    }
+  }
+}, {
+  "match_id" : 3788748,
+  "match_date" : "2021-06-14",
+  "kick_off" : "15:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 942,
+    "home_team_name" : "Scotland",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group D",
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    },
+    "managers" : [ {
+      "id" : 510,
+      "name" : "Steve Clarke",
+      "nickname" : null,
+      "dob" : "1963-08-29",
+      "country" : {
+        "id" : 201,
+        "name" : "Scotland"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 912,
+    "away_team_name" : "Czech Republic",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group D",
+    "country" : {
+      "id" : 60,
+      "name" : "Czech Republic"
+    },
+    "managers" : [ {
+      "id" : 183,
+      "name" : "Jaroslav Šilhavý",
+      "nickname" : null,
+      "dob" : "1961-11-03",
+      "country" : {
+        "id" : 60,
+        "name" : "Czech Republic"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-08-08T19:08:28.233",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 52986,
+    "name" : "Hampden Park",
+    "country" : {
+      "id" : 201,
+      "name" : "Scotland"
+    }
+  },
+  "referee" : {
+    "id" : 225,
+    "name" : "Daniel Siebert",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  }
+}, {
+  "match_id" : 3788751,
+  "match_date" : "2021-06-15",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 771,
+    "home_team_name" : "France",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group F",
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    },
+    "managers" : [ {
+      "id" : 545,
+      "name" : "Didier Deschamps",
+      "nickname" : null,
+      "dob" : "1968-10-15",
+      "country" : {
+        "id" : 78,
+        "name" : "France"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 770,
+    "away_team_name" : "Germany",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group F",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    },
+    "managers" : [ {
+      "id" : 602,
+      "name" : "Joachim Löw",
+      "nickname" : null,
+      "dob" : "1960-02-03",
+      "country" : {
+        "id" : 85,
+        "name" : "Germany"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-08-27T17:33:01.458",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4867,
+    "name" : "Allianz Arena",
+    "country" : {
+      "id" : 85,
+      "name" : "Germany"
+    }
+  },
+  "referee" : {
+    "id" : 2728,
+    "name" : "Carlos del Cerro Grande",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
+  "match_id" : 3788752,
+  "match_date" : "2021-06-15",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 916,
+    "home_team_name" : "Hungary",
+    "home_team_gender" : "male",
+    "home_team_group" : "F",
+    "country" : {
+      "id" : 103,
+      "name" : "Hungary"
+    },
+    "managers" : [ {
+      "id" : 3616,
+      "name" : "Marco Rossi",
+      "nickname" : null,
+      "dob" : "1964-09-09",
+      "country" : {
+        "id" : 112,
+        "name" : "Italy"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 780,
+    "away_team_name" : "Portugal",
+    "away_team_gender" : "male",
+    "away_team_group" : "F",
+    "country" : {
+      "id" : 183,
+      "name" : "Portugal"
+    },
+    "managers" : [ {
+      "id" : 607,
+      "name" : "Fernando Manuel Fernandes da Costa Santos",
+      "nickname" : "Fernando Santos",
+      "dob" : "1954-10-10",
+      "country" : {
+        "id" : 183,
+        "name" : "Portugal"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 3,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:12:48.022633",
+  "last_updated_360" : "2023-04-27T22:33:56.517253",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 116551,
+    "name" : "Puskás Aréna",
+    "country" : {
+      "id" : 103,
+      "name" : "Hungary"
+    }
+  },
+  "referee" : {
+    "id" : 581,
+    "name" : "Cüneyt Çakιr",
+    "country" : {
+      "id" : 233,
+      "name" : "Turkey"
+    }
+  }
+}, {
+  "match_id" : 3788742,
+  "match_date" : "2021-06-12",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 776,
+    "home_team_name" : "Denmark",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group B",
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    },
+    "managers" : [ {
+      "id" : 255,
+      "name" : "Kasper Hjulmand",
+      "nickname" : null,
+      "dob" : "1972-04-09",
+      "country" : {
+        "id" : 61,
+        "name" : "Denmark"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 1835,
+    "away_team_name" : "Finland",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group B",
+    "country" : {
+      "id" : 77,
+      "name" : "Finland"
+    },
+    "managers" : [ {
+      "id" : 3622,
+      "name" : "Markku Kanerva",
+      "nickname" : null,
+      "dob" : "1964-05-24",
+      "country" : {
+        "id" : 77,
+        "name" : "Finland"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-06-14T12:52:32.995",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 495,
+    "name" : "Parken",
+    "country" : {
+      "id" : 61,
+      "name" : "Denmark"
+    }
+  },
+  "referee" : {
+    "id" : 8,
+    "name" : "Anthony Taylor",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3788775,
+  "match_date" : "2021-06-23",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 908,
+    "home_team_name" : "Slovakia",
+    "home_team_gender" : "male",
+    "home_team_group" : "E",
+    "country" : {
+      "id" : 207,
+      "name" : "Slovakia"
+    },
+    "managers" : [ {
+      "id" : 5363,
+      "name" : "Štefan Tarkovič",
+      "nickname" : null,
+      "dob" : "1973-02-18",
+      "country" : {
+        "id" : 207,
+        "name" : "Slovakia"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 772,
+    "away_team_name" : "Spain",
+    "away_team_gender" : "male",
+    "away_team_group" : "E",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    },
+    "managers" : [ {
+      "id" : 793,
+      "name" : "Luis Enrique Martínez García",
+      "nickname" : "Luis Enrique",
+      "dob" : "1970-05-08",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "home_score" : 0,
+  "away_score" : 5,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2023-02-24T21:26:47.128979",
+  "last_updated_360" : "2023-04-27T22:18:06.481826",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 117374,
+    "name" : "Estadio de La Cartuja",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  },
+  "referee" : {
+    "id" : 287,
+    "name" : "Björn Kuipers",
+    "country" : {
+      "id" : 160,
+      "name" : "Netherlands"
+    }
+  }
+}, {
+  "match_id" : 3788776,
+  "match_date" : "2021-06-23",
+  "kick_off" : "18:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 790,
+    "home_team_name" : "Sweden",
+    "home_team_gender" : "male",
+    "home_team_group" : "Group E",
+    "country" : {
+      "id" : 220,
+      "name" : "Sweden"
+    },
+    "managers" : [ {
+      "id" : 549,
+      "name" : "Jan Olof Andersson",
+      "nickname" : null,
+      "dob" : "1962-09-29",
+      "country" : {
+        "id" : 220,
+        "name" : "Sweden"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 789,
+    "away_team_name" : "Poland",
+    "away_team_gender" : "male",
+    "away_team_group" : "Group E",
+    "country" : {
+      "id" : 182,
+      "name" : "Poland"
+    },
+    "managers" : [ {
+      "id" : 1798,
+      "name" : "Paulo Manuel Carvalho de Sousa",
+      "nickname" : "Paulo Sousa",
+      "dob" : "1970-08-30",
+      "country" : {
+        "id" : 183,
+        "name" : "Portugal"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 2,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2021-06-24T15:06:44.531",
+  "last_updated_360" : "2022-08-04T12:00",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 3,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4726,
+    "name" : "Saint-Petersburg Stadium",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  },
+  "referee" : {
+    "id" : 1,
+    "name" : "Michael Oliver",
+    "country" : {
+      "id" : 68,
+      "name" : "England"
+    }
+  }
+}, {
+  "match_id" : 3788743,
+  "match_date" : "2021-06-12",
+  "kick_off" : "21:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 782,
+    "home_team_name" : "Belgium",
+    "home_team_gender" : "male",
+    "home_team_group" : "B",
+    "country" : {
+      "id" : 22,
+      "name" : "Belgium"
+    },
+    "managers" : [ {
+      "id" : 263,
+      "name" : "Roberto Martínez Montoliú",
+      "nickname" : "Roberto Martínez",
+      "dob" : "1973-07-13",
+      "country" : {
+        "id" : 214,
+        "name" : "Spain"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 796,
+    "away_team_name" : "Russia",
+    "away_team_gender" : "male",
+    "away_team_group" : "B",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    },
+    "managers" : [ {
+      "id" : 365,
+      "name" : "Stanislav Cherchesov",
+      "nickname" : null,
+      "dob" : "1963-09-02",
+      "country" : {
+        "id" : 188,
+        "name" : "Russia"
+      }
+    } ]
+  },
+  "home_score" : 3,
+  "away_score" : 0,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:08:33.870037",
+  "last_updated_360" : "2023-04-27T22:37:57.086496",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4726,
+    "name" : "Saint-Petersburg Stadium",
+    "country" : {
+      "id" : 188,
+      "name" : "Russia"
+    }
+  },
+  "referee" : {
+    "id" : 180,
+    "name" : "Antonio Miguel Mateu Lahoz",
+    "country" : {
+      "id" : 214,
+      "name" : "Spain"
+    }
+  }
+}, {
+  "match_id" : 3788744,
+  "match_date" : "2021-06-12",
+  "kick_off" : "15:00:00.000",
+  "competition" : {
+    "competition_id" : 55,
+    "country_name" : "Europe",
+    "competition_name" : "UEFA Euro"
+  },
+  "season" : {
+    "season_id" : 43,
+    "season_name" : "2020"
+  },
+  "home_team" : {
+    "home_team_id" : 907,
+    "home_team_name" : "Wales",
+    "home_team_gender" : "male",
+    "home_team_group" : "A",
+    "country" : {
+      "id" : 249,
+      "name" : "Wales"
+    },
+    "managers" : [ {
+      "id" : 1000471,
+      "name" : "Robert Page",
+      "nickname" : null,
+      "dob" : "1974-09-03",
+      "country" : {
+        "id" : 249,
+        "name" : "Wales"
+      }
+    } ]
+  },
+  "away_team" : {
+    "away_team_id" : 773,
+    "away_team_name" : "Switzerland",
+    "away_team_gender" : "male",
+    "away_team_group" : "A",
+    "country" : {
+      "id" : 221,
+      "name" : "Switzerland"
+    },
+    "managers" : [ {
+      "id" : 492,
+      "name" : "Vladimir Petković",
+      "nickname" : null,
+      "dob" : "1963-08-15",
+      "country" : {
+        "id" : 28,
+        "name" : "Bosnia and Herzegovina"
+      }
+    } ]
+  },
+  "home_score" : 1,
+  "away_score" : 1,
+  "match_status" : "available",
+  "match_status_360" : "available",
+  "last_updated" : "2022-12-01T16:07:37.022146",
+  "last_updated_360" : "2023-04-27T22:37:26.160124",
+  "metadata" : {
+    "data_version" : "1.1.0",
+    "shot_fidelity_version" : "2",
+    "xy_fidelity_version" : "2"
+  },
+  "match_week" : 1,
+  "competition_stage" : {
+    "id" : 10,
+    "name" : "Group Stage"
+  },
+  "stadium" : {
+    "id" : 4549,
+    "name" : "Bakı Olimpiya Stadionu",
+    "country" : {
+      "id" : 16,
+      "name" : "Azerbaijan"
+    }
+  },
+  "referee" : {
+    "id" : 76,
+    "name" : "Clément Turpin",
+    "country" : {
+      "id" : 78,
+      "name" : "France"
+    }
+  }
+} ]

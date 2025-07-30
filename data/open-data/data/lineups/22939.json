@@ -1,0 +1,795 @@
+[ {
+  "team_id" : 1208,
+  "team_name" : "Cameroon Women's",
+  "lineup" : [ {
+    "player_id" : 4943,
+    "player_name" : "Estelle Johnson",
+    "player_nickname" : null,
+    "jersey_number" : 6,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 10714,
+    "player_name" : "Michaela Abam",
+    "player_nickname" : null,
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 25603,
+    "player_name" : "Charlène Iverna Meyong Menene",
+    "player_nickname" : "Charlène Meyong",
+    "jersey_number" : 13,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "81:51",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25605,
+    "player_name" : "Gaelle Enganamouit",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ {
+      "time" : "73:45",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 2
+    } ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "67:03",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25607,
+    "player_name" : "Henriette Akaba",
+    "player_nickname" : null,
+    "jersey_number" : 18,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "66:05",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25614,
+    "player_name" : "Marie Aurelle Awona",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25616,
+    "player_name" : "Gabrielle Onguene",
+    "player_nickname" : null,
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "00:00",
+      "to" : "32:13",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "32:13",
+      "to" : "59:18",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "59:18",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25618,
+    "player_name" : "Christine Manie",
+    "player_nickname" : null,
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 4,
+      "position" : "Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25620,
+    "player_name" : "Annette Ngo",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25622,
+    "player_name" : "Marlyse Bernadette Ngo Ndoumbouk",
+    "player_nickname" : null,
+    "jersey_number" : 19,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ {
+      "time" : "36:42",
+      "card_type" : "Yellow Card",
+      "reason" : "Foul Committed",
+      "period" : 1
+    } ],
+    "positions" : [ {
+      "position_id" : 23,
+      "position" : "Center Forward",
+      "from" : "00:00",
+      "to" : "67:03",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 25623,
+    "player_name" : "Yvonne Patrice Leuko",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 8,
+      "position" : "Left Wing Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25626,
+    "player_name" : "Raissa Feudjio Tchuanyo",
+    "player_nickname" : null,
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 19,
+      "position" : "Center Attacking Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25628,
+    "player_name" : "Ajara Nchout",
+    "player_nickname" : null,
+    "jersey_number" : 3,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "00:00",
+      "to" : "32:13",
+      "from_period" : 1,
+      "to_period" : 1,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "32:13",
+      "to" : "59:18",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Tactical Shift"
+    }, {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "59:18",
+      "to" : "66:05",
+      "from_period" : 2,
+      "to_period" : 2,
+      "start_reason" : "Tactical Shift",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 25630,
+    "player_name" : "Claudine Falonne Meffometou Tcheno",
+    "player_nickname" : null,
+    "jersey_number" : 12,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 7,
+      "position" : "Right Wing Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25631,
+    "player_name" : "Jeannette Yango",
+    "player_nickname" : null,
+    "jersey_number" : 10,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 10,
+      "position" : "Center Defensive Midfield",
+      "from" : "00:00",
+      "to" : "81:51",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 25777,
+    "player_name" : "Geneviève Ngo Mbeleck",
+    "player_nickname" : null,
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 26095,
+    "player_name" : "Therese Ninon Abena",
+    "player_nickname" : null,
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 26096,
+    "player_name" : "Alexandra Takounda Engolo",
+    "player_nickname" : null,
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 26097,
+    "player_name" : "Augustine Sylvia Ejangue Siliki",
+    "player_nickname" : null,
+    "jersey_number" : 5,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 26183,
+    "player_name" : "Ysis Sonkeng",
+    "player_nickname" : null,
+    "jersey_number" : 15,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 391238,
+    "player_name" : "Marthe Yolande Ongmahan",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 391239,
+    "player_name" : "Madeleine Michele Ngono Mani Epse Ongueme",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 391240,
+    "player_name" : "Isabelle Mambingo",
+    "player_nickname" : null,
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 39,
+      "name" : "Cameroon"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  } ]
+}, {
+  "team_id" : 1206,
+  "team_name" : "Canada Women's",
+  "lineup" : [ {
+    "player_id" : 4951,
+    "player_name" : "Quinn Quinn",
+    "player_nickname" : null,
+    "jersey_number" : 5,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 4966,
+    "player_name" : "Desiree Rose Marie Scott",
+    "player_nickname" : null,
+    "jersey_number" : 11,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 13,
+      "position" : "Right Center Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 4981,
+    "player_name" : "Kailen Mary Iacovoni Sheridan",
+    "player_nickname" : null,
+    "jersey_number" : 18,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 4992,
+    "player_name" : "Janine Elizabeth Beckie",
+    "player_nickname" : null,
+    "jersey_number" : 16,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 16,
+      "position" : "Left Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 5020,
+    "player_name" : "Christine Margaret Sinclair",
+    "player_nickname" : null,
+    "jersey_number" : 12,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 22,
+      "position" : "Right Center Forward",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 5038,
+    "player_name" : "Allysha Lyn Chapman",
+    "player_nickname" : null,
+    "jersey_number" : 2,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 6,
+      "position" : "Left Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 5043,
+    "player_name" : "Nichelle Patrice Prince",
+    "player_nickname" : null,
+    "jersey_number" : 15,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "00:00",
+      "to" : "74:30",
+      "from_period" : 1,
+      "to_period" : 2,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Substitution - Off (Tactical)"
+    } ]
+  }, {
+    "player_id" : 5074,
+    "player_name" : "Shelina Laura Zadorsky",
+    "player_nickname" : null,
+    "jersey_number" : 4,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 5,
+      "position" : "Left Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 5102,
+    "player_name" : "Sabrina D’Angelo",
+    "player_nickname" : null,
+    "jersey_number" : 21,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 8297,
+    "player_name" : "Adriana Kristina Leon",
+    "player_nickname" : null,
+    "jersey_number" : 19,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 8383,
+    "player_name" : "Lindsay Elizabeth Agnew",
+    "player_nickname" : "Lindsay Agnew",
+    "jersey_number" : 22,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 15180,
+    "player_name" : "Sophie Schmidt",
+    "player_nickname" : null,
+    "jersey_number" : 13,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 15,
+      "position" : "Left Center Midfield",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 15290,
+    "player_name" : "Ashley Elizabeth Marie Lawrence",
+    "player_nickname" : "Ashley Lawrence",
+    "jersey_number" : 10,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 2,
+      "position" : "Right Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 15357,
+    "player_name" : "Kadeisha Buchanan",
+    "player_nickname" : null,
+    "jersey_number" : 3,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 3,
+      "position" : "Right Center Back",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25601,
+    "player_name" : "Deanne Cynthia Rose",
+    "player_nickname" : null,
+    "jersey_number" : 6,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 12,
+      "position" : "Right Midfield",
+      "from" : "74:30",
+      "to" : null,
+      "from_period" : 2,
+      "to_period" : null,
+      "start_reason" : "Substitution - On (Tactical)",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25609,
+    "player_name" : "Stephanie Lynn Marie Labbé",
+    "player_nickname" : null,
+    "jersey_number" : 1,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 1,
+      "position" : "Goalkeeper",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25612,
+    "player_name" : "Jessie Alexandra Fleming",
+    "player_nickname" : null,
+    "jersey_number" : 17,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ {
+      "position_id" : 24,
+      "position" : "Left Center Forward",
+      "from" : "00:00",
+      "to" : null,
+      "from_period" : 1,
+      "to_period" : null,
+      "start_reason" : "Starting XI",
+      "end_reason" : "Final Whistle"
+    } ]
+  }, {
+    "player_id" : 25785,
+    "player_name" : "Jayde Yuk Fun Riviere",
+    "player_nickname" : null,
+    "jersey_number" : 8,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 26091,
+    "player_name" : "Jordyn Pamela Huitema",
+    "player_nickname" : null,
+    "jersey_number" : 9,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 42254,
+    "player_name" : "Jenna Hellstrom",
+    "player_nickname" : null,
+    "jersey_number" : 23,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 57981,
+    "player_name" : "Shannon Elizabeth Woeller",
+    "player_nickname" : null,
+    "jersey_number" : 20,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 131645,
+    "player_name" : "Julia Angela Grosso",
+    "player_nickname" : null,
+    "jersey_number" : 7,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  }, {
+    "player_id" : 131669,
+    "player_name" : "Gabrielle Carle",
+    "player_nickname" : null,
+    "jersey_number" : 14,
+    "country" : {
+      "id" : 40,
+      "name" : "Canada"
+    },
+    "cards" : [ ],
+    "positions" : [ ]
+  } ]
+} ]

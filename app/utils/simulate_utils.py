@@ -1,17 +1,32 @@
+"""
+Simulation utilities for the Football Analytics Dashboard.
+
+This module provides functions for loading match data, extracting pass and shot events,
+aggregating pass networks, and rendering interactive match simulations with Streamlit.
+
+Functions
+---------
+- load_matches: Load and cache all matches from StatsBomb open-data into a DataFrame.
+- load_match_events: Load events for a given match and extract passes & shots.
+- get_pass_network_data: Aggregate pass events into a pass network DataFrame.
+"""
+
 import os
 import json
-import time
 import numpy as np
 import pandas as pd
 import streamlit as st
 from football_stream_processor.config import DATA_DIR
-import plotly.graph_objects as go
 
-MAJOR_COMPS = {"English Premier League", "La Liga", "Champions League"}
 
 @st.cache_data
 def load_matches():
-    """Load and cache all matches from StatsBomb open-data into a DataFrame."""
+    """
+    Load and cache all matches from StatsBomb open-data into a DataFrame.
+
+    :return: DataFrame of matches with columns [match_id, home_team, away_team, competition, season, date].
+    :rtype: pd.DataFrame
+    """
     matches = []
     matches_dir = os.path.join(DATA_DIR, "matches")
 
@@ -26,8 +41,6 @@ def load_matches():
                 data = json.load(f)
                 for m in data:
                     comp_name = m["competition"]["competition_name"]
-                    if comp_name not in MAJOR_COMPS:
-                        continue
                     matches.append({
                         "match_id": m["match_id"],
                         "home_team": m["home_team"]["home_team_name"],
@@ -42,7 +55,14 @@ def load_matches():
 
 @st.cache_data
 def load_match_events(match_id):
-    """Load events for a given match and extract passes & shots."""
+    """
+    Load events for a given match and extract passes & shots.
+
+    :param match_id: Match identifier.
+    :type match_id: int or str
+    :return: Tuple (passes, xg_team1, xg_team2, times)
+    :rtype: (list, np.ndarray, np.ndarray, list)
+    """
     path = os.path.join(DATA_DIR, "events", f"{match_id}.json")
     with open(path, "r") as f:
         events = json.load(f)
@@ -79,72 +99,38 @@ def load_match_events(match_id):
     return passes, xg_team1, xg_team2, times
 
 
-def render_match_simulator(passes, xg_team1, xg_team2, times):
-    """Render the match simulator with pitch animation and xG progression."""
-    if not passes:
-        st.warning("No passes found for this match.")
-        return
+def get_pass_network_data(match_id):
+    """
+    Parse pass events from StatsBomb event data for a given match and aggregate 
+    the number of passes between each passer-receiver pair within the same team.
 
-    if "frame" not in st.session_state:
-        st.session_state.frame = 0
-    if "playing" not in st.session_state:
-        st.session_state.playing = False
+    :param match_id: Match identifier.
+    :type match_id: int or str
+    :return: DataFrame with columns ['passer', 'receiver', 'count', 'team'].
+    :rtype: pd.DataFrame
+    """
+    path = os.path.join(DATA_DIR, "events", f"{match_id}.json")
+    with open(path, "r", encoding="utf-8") as f:
+        events = json.load(f)
 
-    # Controls
-    col1, col2, col3 = st.columns([1, 4, 1])
-    with col1:
-        if st.button("▶️ Play"):
-            st.session_state.playing = True
-        if st.button("⏸ Pause"):
-            st.session_state.playing = False
-    with col3:
-        speed = st.selectbox("Speed (x)", [0.5, 1, 2], index=1)
+    data = []
+    for e in events:
+        if (
+            e.get("type", {}).get("name") == "Pass"
+            and "pass" in e
+            and "recipient" in e["pass"]
+            and "location" in e
+        ):
+            passer = e["player"]["name"]
+            receiver = e["pass"]["recipient"]["name"]
+            team = e["team"]["name"]
+            data.append({"passer": passer, "receiver": receiver, "team": team})
 
-    with col2:
-        st.session_state.frame = st.slider(
-            "Timeline (seconds)",
-            0,
-            times[-1] if times else 0,
-            st.session_state.frame
-        )
+    df = pd.DataFrame(data)
+    if df.empty:
+        return df
 
-    # Increment frame if playing
-    if st.session_state.playing:
-        if st.session_state.frame < (times[-1] if times else 0):
-            st.session_state.frame += speed
-        else:
-            st.session_state.playing = False
-        time.sleep(0.1)
-        st.rerun()
+    # Count number of passes from each passer to each receiver
+    df = df.groupby(["passer", "receiver", "team"]).size().reset_index(name="count")
 
-    # Current ball position
-    x_coords = [p["x"] for p in passes]
-    y_coords = [p["y"] for p in passes]
-    idx = min(range(len(passes)), key=lambda i: abs(passes[i]["time"] - st.session_state.frame))
-    ball_x = x_coords[idx]
-    ball_y = y_coords[idx]
-
-    # Draw pitch
-    pitch = go.Figure()
-    pitch.add_shape(type="rect", x0=0, y0=0, x1=100, y1=60,
-                    line=dict(color="white"), fillcolor="green")
-    pitch.add_trace(go.Scatter(x=x_coords, y=y_coords, mode="lines+markers",
-                               line=dict(color="orange"), name="Pass Path"))
-    pitch.add_trace(go.Scatter(x=[ball_x], y=[ball_y], mode="markers",
-                               marker=dict(color="red", size=12), name="Ball"))
-    pitch.update_layout(
-        title="Pass Sequence Simulation",
-        xaxis=dict(range=[0, 100], visible=False),
-        yaxis=dict(range=[0, 60], visible=False),
-        plot_bgcolor="green",
-        height=400
-    )
-    st.plotly_chart(pitch, use_container_width=True)
-
-    # Draw xG progression
-    xg_fig = go.Figure()
-    xg_fig.add_trace(go.Scatter(x=times, y=xg_team1, name="Home Team", line=dict(color="blue")))
-    xg_fig.add_trace(go.Scatter(x=times, y=xg_team2, name="Away Team", line=dict(color="red")))
-    xg_fig.add_vline(x=st.session_state.frame, line_dash="dash", line_color="gray")
-    xg_fig.update_layout(title="xG Progression", xaxis_title="Time (s)", yaxis_title="xG")
-    st.plotly_chart(xg_fig, use_container_width=True)
+    return df

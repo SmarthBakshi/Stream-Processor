@@ -10,3 +10,4 @@ mlartifacts/
 resources/
 **/mlflow.runName
 **/meta.yaml
+lib/
