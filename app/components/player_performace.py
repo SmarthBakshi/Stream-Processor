@@ -11,6 +11,8 @@ from football_stream_processor.config import DATA_DIR
 def plot_touch_heatmap_mpl(df_touches, player_name):
 
     fig, ax = plt.subplots(figsize=(8, 6))
+    fig.patch.set_facecolor('#111')   # Match background to pitch color
+    ax.set_facecolor('#111')          # Ensure axis area matches pitch
 
     pitch = Pitch(pitch_type='statsbomb',
                   pitch_color='#0e1117',  # dark theme
@@ -39,7 +41,9 @@ def plot_touch_heatmap_mpl(df_touches, player_name):
 
 
 def plot_shot_map_mpl(df_shots, player_name):
-    fig, ax = plt.subplots(figsize=(6, 5))
+    fig, ax = plt.subplots(figsize=(8, 6))
+    fig.patch.set_facecolor('#111')   # Match background to pitch color
+    ax.set_facecolor('#111')          # Ensure axis area matches pitch
     pitch = Pitch(pitch_type='statsbomb', pitch_color='#111', line_color='white')
     pitch.draw(ax=ax)
 
