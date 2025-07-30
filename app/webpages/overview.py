@@ -1,21 +1,50 @@
+"""
+Overview page for the ML-powered Football Analytics Dashboard.
+
+This module provides the main Streamlit page for visualizing match insights,
+model performance, and pass networks using machine learning and StatsBomb data.
+
+Functions
+---------
+- overview_page: Renders the dashboard overview page with visualizations, model metrics, and leaderboard.
+"""
+
 import streamlit as st
-from components.pass_network import render_pass_network
-from components.shot_map import render_shot_map
-from components.player_performace import render_player_performance
-from utils.simulate_utils import load_match_events
-from utils.mlflow_utils import fetch_xgboost_runs
+
 from utils.ui_helpers import kpi_card
+from utils.mlflow_utils import fetch_xgboost_runs
+
+from components.shot_map import render_shot_map
+from components.pass_network import render_pass_network
+from components.player_performace import render_player_performance
+
 
 
 def overview_page():
-    st.title("⚽ ML-powered Football Analytics Dashboard")
-    st.markdown("Explore football match insights using machine learning:")
+    """
+    Render the main overview page for the Football Analytics Dashboard.
+
+    Displays:
+    - Match visualizations (shot map, player heatmap)
+    - Best model metrics (accuracy, precision, recall, ROC AUC)
+    - Model leaderboard
+    - Pass network snapshot
+
+    :return: None
+    """
+    st.markdown("<h1 style='text-align:center;'>⚽ ML-powered Football Analytics Dashboard</h1>", unsafe_allow_html=True)
+    st.markdown(
+        "<p style='text-align:center; font-size:1.3rem; font-style:italic;'>Explore football match insights using Machine Learning</p>",
+        unsafe_allow_html=True
+    )
 
     # ---------------------
     # Match Visualizations Preview (Top)
     # ---------------------
     st.divider()
-    st.subheader("🔍 Match Visualizations")
+    
+    st.markdown("<h2 style='text-align:center;'>🔍 Match Visualizations</h2>", unsafe_allow_html=True)
+    st.write("")
 
     col1, col2 = st.columns(2)
     with col1:
@@ -46,7 +75,7 @@ def overview_page():
     # Leaderboard & Pass Network
     # ---------------------
     st.divider()
-    st.subheader("📊 Model Leaderboard  &  🔁 Pass Network")
+    st.markdown("<h2 style='text-align:center;'>📊 Model Leaderboard  &  Pass Network</h2>", unsafe_allow_html=True)
 
     col5, col6 = st.columns(2)
 
@@ -67,3 +96,4 @@ def overview_page():
 
     st.divider()
     st.markdown("📎 **View full code on [GitHub](https://github.com/SmarthBakshi/Stream-Processor)**")
+    return
