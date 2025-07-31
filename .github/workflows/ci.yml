@@ -24,14 +24,18 @@ jobs:
         run: |
           curl -sSL https://install.python-poetry.org | python3 -
           echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: 🔧 Install dependencies using Poetry
+        run: |
           export PATH="$HOME/.local/bin:$PATH"
+          poetry install --no-interaction --no-ansi
 
-
-      - name: 📜 Install dependencies
-        run: poetry install --no-interaction --no-ansi
-
-      - name: ✅ Run Pytest
-        run: poetry run pytest
+      - name: ✅ Run tests with Pytest
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          poetry run pytest
 
       - name: 🧹 Run Ruff linter
-        run: poetry run ruff check .
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          poetry run ruff check .
