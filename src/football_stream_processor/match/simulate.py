@@ -7,9 +7,10 @@ This script loads event data and prints each event with a simulated real-time de
 import json
 import time
 from datetime import datetime
+from football_stream_processor.config import DATA_DIR
 
 # Load the JSON file
-with open("../../../open-data/data/events/22912.json") as f:
+with open(DATA_DIR / "events" / "22912.json") as f:
     events = json.load(f)
 
 def parse_timestamp(t):
