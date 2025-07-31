@@ -11,11 +11,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🛎️ Checkout repository (with submodules)
+      - name: 🛎️ Checkout repository (shallow + submodules)
         uses: actions/checkout@v4
         with:
-          submodules: recursive
-          fetch-depth: 0
+          fetch-depth: 1         # only the latest commit
+          submodules: recursive  # initialize submodules
+
+      - name: 🔍 Shallow-update submodules
+        run: |
+          git submodule sync --recursive
+          git submodule update --init --recursive --depth 1
+
+      - name: 📂 Sparse-checkout only events & matches
+        run: |
+          # enable sparse mode
+          git sparse-checkout init --cone
+          # pull only these two directories from the open-data submodule
+          git sparse-checkout set open-data/data/events open-data/data/matches
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -28,13 +40,10 @@ jobs:
           pip install poetry==1.8.2
 
       - name: 📜 Install dependencies
-        run: |
-          poetry install --no-interaction --no-ansi
+        run: poetry install --no-interaction --no-ansi
 
       - name: ✅ Run tests with Pytest
-        run: |
-          poetry run pytest
+        run: poetry run pytest --maxfail=1 --disable-warnings -q
 
       - name: 🧹 Run Ruff linter
-        run: |
-          poetry run ruff check .
+        run: poetry run ruff check .
