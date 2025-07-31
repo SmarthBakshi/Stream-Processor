@@ -44,9 +44,9 @@ train-xg-model = "football_stream_processor.models.xg_model.train:main"
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.1"
 pytest-cov = "^6.2.1"
+ruff = "^0.12.7"
 
 [tool.pytest.ini_options]
-addopts = "-ra -q --tb=short"
 python_files = "test_*.py"
 pythonpath = ["src"]
 testpaths = ["tests"]
