@@ -1,23 +1,51 @@
-FROM python:3.11-slim
+# ── Build Stage ───────────────────────────────────────────────────────────────
+FROM python:3.11-slim AS builder
 
-ENV POETRY_VERSION=1.8.2 \
-  POETRY_VIRTUALENVS_CREATE=false \
+# Don’t create venvs inside Poetry, write .pyc, or buffer stdout
+ENV POETRY_VIRTUALENVS_CREATE=false \
   PYTHONDONTWRITEBYTECODE=1 \
   PYTHONUNBUFFERED=1
 
-# Install dependencies
-RUN apt-get update && apt-get install -y curl git build-essential && \
-  pip install "poetry==$POETRY_VERSION"
+# Install build tools & Poetry
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends curl build-essential git \
+  && curl -sSL https://install.python-poetry.org | python3 - \
+  && rm -rf /var/lib/apt/lists/*
 
-# Set working directory
-WORKDIR /src
+# Add Poetry to PATH
+ENV PATH="/root/.local/bin:${PATH}"
 
-# Copy project files
+WORKDIR /app
+
+# Copy project metadata & install deps only
 COPY pyproject.toml poetry.lock ./
-RUN poetry install --no-interaction --no-ansi
+RUN poetry install --no-interaction --no-ansi --without dev --no-root
 
-# Copy rest of the source code
+# ── Final Stage ───────────────────────────────────────────────────────────────
+FROM python:3.11-slim
+
+# keep same runtime envs
+ENV POETRY_VIRTUALENVS_CREATE=false \
+  PYTHONDONTWRITEBYTECODE=1 \
+  PYTHONUNBUFFERED=1 \
+  PYTHONPATH=/app/src
+
+
+WORKDIR /app
+
+# Copy installed packages from builder
+COPY --from=builder /usr/local         /usr/local
+COPY --from=builder /root/.local       /root/.local
+
+
+ENV PATH="/root/.local/bin:${PATH}"
+
+#
+# Copy your entire project (so that `src/` and `app/` land under `/app`)
 COPY . .
 
-# Default command — can be overridden
-CMD ["poetry", "run", "python", "src/train.py"]
+# Expose Streamlit’s default port
+EXPOSE 8501
+
+# Launch from the repo root, pointing to the Streamlit entrypoint under src/app
+CMD ["streamlit", "run", "src/app/main.py", "--server.port=8501", "--server.enableCORS=false"]
