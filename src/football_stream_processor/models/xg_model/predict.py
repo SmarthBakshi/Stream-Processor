@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 
-from .utils import load_model
-from .feature_engineering import add_engineered_features
+from utils import load_model
+from feature_engineering import add_engineered_features
 
 def predict_pass_outcome(model_path: str, input_df: pd.DataFrame):
     model = load_model(model_path)

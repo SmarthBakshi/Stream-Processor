@@ -3,7 +3,9 @@
 import os
 import pandas as pd
 import seaborn as sns
+from pathlib import Path
 import matplotlib.pyplot as plt
+from football_stream_processor.config import PICKLE_DIR
 from football_stream_processor.models.xg_model.feature_engineering import add_engineered_features
 
 class PassDataEDA:
@@ -155,7 +157,8 @@ def basic_checks(df: pd.DataFrame = None) -> pd.DataFrame:
     :return: Cleaned DataFrame.
     :rtype: pd.DataFrame
     """
-    df = pd.read_pickle("~/projects/football_stream_processor/.pickle/pass_data.pkl") if df is None else df
+    cache_path = PICKLE_DIR / "pass_data.pkl"
+    df = pd.read_pickle(cache_path) if df is None else df
     df = add_engineered_features(df)
     eda = PassDataEDA(df)
     eda.missing_values(handle="drop")
