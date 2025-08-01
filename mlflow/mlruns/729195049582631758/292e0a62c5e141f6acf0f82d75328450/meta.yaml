@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/smarthbakshi/projects/football_stream_processor/mlflow/mlruns/729195049582631758/292e0a62c5e141f6acf0f82d75328450/artifacts
+end_time: 1753894014569
+entry_point_name: ''
+experiment_id: '729195049582631758'
+lifecycle_stage: active
+run_id: 292e0a62c5e141f6acf0f82d75328450
+run_name: victorious-fly-911
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753894002981
+status: 3
+tags: []
+user_id: smarthbakshi

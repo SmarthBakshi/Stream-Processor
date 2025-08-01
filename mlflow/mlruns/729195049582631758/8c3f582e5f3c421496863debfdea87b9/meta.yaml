@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/smarthbakshi/projects/football_stream_processor/mlflow/mlruns/729195049582631758/8c3f582e5f3c421496863debfdea87b9/artifacts
+end_time: 1753894041433
+entry_point_name: ''
+experiment_id: '729195049582631758'
+lifecycle_stage: active
+run_id: 8c3f582e5f3c421496863debfdea87b9
+run_name: zealous-newt-830
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753894034518
+status: 3
+tags: []
+user_id: smarthbakshi

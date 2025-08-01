@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/smarthbakshi/projects/football_stream_processor/mlflow/mlruns/729195049582631758/81051365576840a0ba5f5f52232addff/artifacts
+end_time: 1753894157914
+entry_point_name: ''
+experiment_id: '729195049582631758'
+lifecycle_stage: active
+run_id: 81051365576840a0ba5f5f52232addff
+run_name: suave-conch-293
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753894149005
+status: 3
+tags: []
+user_id: smarthbakshi

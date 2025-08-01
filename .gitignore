@@ -5,9 +5,5 @@ __pycache__
 *.csv
 TODO.*
 *.png
-mlruns/
-mlartifacts/
 resources/
-**/mlflow.runName
-**/meta.yaml
 lib/

@@ -1,0 +1,10 @@
+artifact_location: file:///Users/smarthbakshi/projects/football_stream_processor/mlflow/mlruns/729195049582631758/models/m-720fb71fa6d94673a63fa61ce124ae40/artifacts
+creation_timestamp: 1753894188131
+experiment_id: '729195049582631758'
+last_updated_timestamp: 1753894190426
+model_id: m-720fb71fa6d94673a63fa61ce124ae40
+model_type: null
+name: model
+source_run_id: 36b7efdc6cc749518c9550ed927c07b4
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/smarthbakshi/projects/football_stream_processor/mlflow/mlruns/729195049582631758/dc2c3c1ee8274c9b8791caeb326c7c40/artifacts
+end_time: 1753894126780
+entry_point_name: ''
+experiment_id: '729195049582631758'
+lifecycle_stage: active
+run_id: dc2c3c1ee8274c9b8791caeb326c7c40
+run_name: respected-owl-22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753894116216
+status: 3
+tags: []
+user_id: smarthbakshi

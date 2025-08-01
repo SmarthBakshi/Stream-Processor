@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/smarthbakshi/projects/football_stream_processor/mlflow/mlruns/729195049582631758/1c5060d013e9413c8f919a31ab88749d/artifacts
+end_time: 1753894110911
+entry_point_name: ''
+experiment_id: '729195049582631758'
+lifecycle_stage: active
+run_id: 1c5060d013e9413c8f919a31ab88749d
+run_name: funny-ant-24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753894095578
+status: 3
+tags: []
+user_id: smarthbakshi

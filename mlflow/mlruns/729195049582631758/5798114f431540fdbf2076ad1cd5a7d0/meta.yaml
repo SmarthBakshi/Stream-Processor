@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/smarthbakshi/projects/football_stream_processor/mlflow/mlruns/729195049582631758/5798114f431540fdbf2076ad1cd5a7d0/artifacts
+end_time: 1753894062717
+entry_point_name: ''
+experiment_id: '729195049582631758'
+lifecycle_stage: active
+run_id: 5798114f431540fdbf2076ad1cd5a7d0
+run_name: intrigued-mare-733
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753894046543
+status: 3
+tags: []
+user_id: smarthbakshi
