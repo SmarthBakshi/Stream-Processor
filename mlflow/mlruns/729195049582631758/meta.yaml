@@ -1,6 +1,0 @@
-artifact_location: file:///Users/smarthbakshi/projects/football_stream_processor/mlflow/mlruns/729195049582631758
-creation_time: 1753893998202
-experiment_id: '729195049582631758'
-last_update_time: 1753893998202
-lifecycle_stage: active
-name: football-pass-prediction
