@@ -2,7 +2,10 @@ __pycache__
 *.pyc
 *.pyo
 *.pyd
+*.pkl
 mlruns/
+mlartifacts/
+mlflow/
 data/
 models/
 .env
