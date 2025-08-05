@@ -1,6 +1,7 @@
 venv/
 __pycache__
 *.pkl
+*.mp4
 *.csv
 TODO.*
 *.png
