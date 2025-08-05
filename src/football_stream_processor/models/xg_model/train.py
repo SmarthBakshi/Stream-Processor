@@ -135,7 +135,7 @@ def main():
     # If no model exists, run Optuna optimization
     print("🚀 No registered model found. Running hyperparameter optimization...")
     study = optuna.create_study(direction="maximize")
-    study.optimize(objective, n_trials=5, n_jobs=1)
+    study.optimize(objective, n_trials=20, n_jobs=1)
 
     print("Best trial:")
     print(f"  ROC AUC: {study.best_value}")
