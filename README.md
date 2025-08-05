@@ -3,6 +3,16 @@
 A modular Python project for extracting, processing, analyzing, and visualizing football (soccer) event data, with a focus on passes, carries, and shots. The project features advanced machine learning models for predicting pass success, alongside robust support for feature engineering, exploratory data analysis (EDA), and animated visualizations of match events using StatsBomb open data.
 
 ---
+---
+
+## 🎥 Demo
+
+<video width="100%" controls>
+  <source src="media/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+---
 
 ## Features
 
