@@ -157,7 +157,7 @@ def basic_checks(df: pd.DataFrame = None) -> pd.DataFrame:
     :return: Cleaned DataFrame.
     :rtype: pd.DataFrame
     """
-    cache_path = PICKLE_DIR / "pass_data.pkl"
+    cache_path = Path(PICKLE_DIR) / "pass_data.pkl"
     df = pd.read_pickle(cache_path) if df is None else df
     df = add_engineered_features(df)
     eda = PassDataEDA(df)
