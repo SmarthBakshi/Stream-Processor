@@ -138,13 +138,23 @@ poetry run streamlit run src/app/main.py \
 
 ## Docker
 
-#### Build and run the Streamlit dashboard in Docker
+#### Build and run the Streamlit dashboard using Docker
+
+- Run the `train.py` script to have the mlflow runs and experiments stored in `mlflow/`
+- Build the Docker Image
 
 ```bash
 docker build -t football-dashboard .
-docker run --rm -p 8501:8501 \
-  -v "$(pwd)/open-data/data:/app/open-data/data" \
-  football-dashboard:latest
+```
+
+- Run the docker Image
+
+```bash
+ docker run --rm \             
+  -p 8501:8501 \                                  
+  -v $(pwd)/open-data:/app/open-data \        
+  -v $(pwd)/mlflow/mlruns:/app/mlflow/mlruns \
+  football-dashboard
 ```
 
 ## CI/CD
