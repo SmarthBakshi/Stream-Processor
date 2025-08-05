@@ -150,11 +150,10 @@ docker build -t football-dashboard .
 - Run the docker Image
 
 ```bash
- docker run --rm \             
-  -p 8501:8501 \                                  
-  -v $(pwd)/open-data:/app/open-data \        
-  -v $(pwd)/mlflow/mlruns:/app/mlflow/mlruns \
-  football-dashboard
+ docker run --rm \              
+  -p 8501:8501 \
+  -v $(pwd)/open-data:/app/open-data \
+  -v $(pwd)/mlflow/mlruns:/app/mlflow/mlruns football-dashboard
 ```
 
 ## CI/CD
